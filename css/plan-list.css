@@ -1,0 +1,109 @@
+.white-bg {
+  background: #ffffff !important;
+}
+.main .plan-header {
+  padding: 1rem;
+  border-bottom: 1px solid #dedddd;
+  -webkit-box-shadow: 3px 3px 6px #e0dfdf;
+  -moz-box-shadow: 3px 3px 6px #e0dfdf;
+  box-shadow: 3px 3px 6px #e0dfdf;
+}
+.main .plan-header input {
+  width: 100%;
+  padding: 0.6rem 0.6rem 0.6rem 2.6rem;
+  border: none;
+  background: #f1f6f6 url("../images/plan-search.png") 0.2rem 0.25rem no-repeat;
+  background-size: 2rem 2rem;
+  outline: none;
+  color: #4f4f4f;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.main .plan-list-nav {
+  background: #f1f6f6;
+  padding: 1.5rem 0 1.3rem;
+}
+.main .plan-list-nav li {
+  width: 50%;
+  border-right: 1px solid #ffffff;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #8edadd;
+}
+.main .plan-list-nav li:last-child {
+  border-right: none;
+}
+.main .plan-list-nav li a {
+  background: #bdc7cb;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+}
+.main .plan-list-main {
+  padding: 1rem;
+  border-bottom: 1px dashed #e0e0e0;
+}
+.main .plan-list-main h3 {
+  color: #666666;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.main .plan-list-main h3 img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  
+}
+.main .plan-list-main .article-img-wrap {
+  position: relative;
+}
+.main .plan-list-main .article-img-wrap img {
+  width: 100%;
+  height: 11.5rem;
+  margin-bottom: 0.5rem;
+}
+.main .plan-list-main .article-img-wrap .article-words {
+  margin: 0 auto;
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);;
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+.main .plan-list-main .article-img-wrap .article-words p {
+  padding: 1rem;
+  border-top: 1px solid #040404;
+  border-bottom: 1px solid #040404;
+  font-size: 1.2rem;
+  color: #030303;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .plan-list-main .article-img-wrap .article-words p span {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.main .plan-list-footer {
+  font-size: 1.1rem;
+}
+.main .plan-list-footer span {
+  color: #8c8c8c;
+  margin-right: 2rem;
+}
+.main .plan-list-footer span:last-child {
+  color: #11b2b8;
+}

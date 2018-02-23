@@ -1,0 +1,177 @@
+/* CSS Reset*/
+body{ background: #f6f6f6; max-width: 640px; min-width: 320px; margin: 0 auto;}
+.CurBody{ background: #fff;}
+
+.Case_con{height: auto; overflow: hidden; margin-bottom: 5rem; padding-bottom: 1rem;}
+.Case_con li{ margin-top: 0.7rem; padding: 1.5rem 0; background: #fff; box-shadow: 1px 1px 2px #dedddd; }
+.Case_con li h3{ padding: 0 1.7rem; font-size: 1.4rem; font-weight: 500; color: #4f4f4f; height: 2.5rem; line-height: 2.5rem; background:url(../images/jiantou_03.png) 95% center no-repeat; background-size:2%;}
+.Case_con li h3 img{ width: 2.5rem; float: left; margin-right: 1.5rem;}
+.Case_con li p{ line-height: 2.3rem; font-size: 1.4rem; color: #898989; font-weight: 100; padding-left: 5.6rem; padding-right: 3rem; margin-top: 0.8rem;   word-break: break-all;text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+
+
+
+.Case_con li .Case_con_tex{font-size: 1.3rem; color: #898989; font-weight: 100; padding-left: 5.6rem; padding-right: 3rem; margin-top: 0.8rem;  }
+.Case_con li .Case_con_tex .Label{ padding:0.5rem 1.8rem; border-radius: 2rem; border: solid 1px #d2d2d2; display: inline-block;}
+.PromptNum{background: #ff6d6d; color: #fff; float: right; display: inline-block; font-size: 1.3rem; border-radius: 50%; margin-top: 0.4rem; width:1.8rem; height: 1.8rem; line-height: 1.8rem; margin-right: 2rem; text-align: center; }
+
+.zoomImgCon{ height: auto; overflow: hidden;}
+.CourseCon{ background: #fff;}
+.ConTex{ padding: 3rem 0; border-top: solid 1rem #f6f6f6 ;}
+.CourseCon h2{ padding: 0 2.5rem; font-size: 1.2rem;}
+.CourseCon h2 .bt{ border:solid 1px #d2d2d2; display: inline-block; padding: 0.5rem 1rem; border-radius: 2rem; color: #6d6d6d; font-weight: 100;}
+.CourseBt{ margin-bottom: 1.5rem;}
+.CourseCon h2 .Time{ float: right; font-size: 1.2rem; color: #cbcbcb; margin-top: 0.7rem; font-weight: 100;}
+
+.ImaBox{  width: 85%; float: right; height: auto; border-left: solid 1px #c4c4c4;padding-left: 1.6rem; padding-top: 1.6rem; padding-bottom: 1.6rem;}
+.ImaBox img{ width: 42%; margin-right: 2%; display: inline-block;}
+			.mui-preview-image.mui-fullscreen {
+				position: fixed;
+				z-index: 20;
+				background-color: #000;
+			}
+			.mui-preview-header,
+			.mui-preview-footer {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				z-index: 10;
+			}
+			.mui-preview-header {
+				height: 44px;
+				top: 0;
+			}
+			.mui-preview-footer {
+				height: 50px;
+				bottom: 0px;
+			}
+			.mui-preview-header .mui-preview-indicator {
+				display: block;
+				line-height: 25px;
+				color: #fff;
+				text-align: center;
+				margin: 15px auto 4;
+				width: 70px;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 12px;
+				font-size: 16px;
+			}
+			.mui-preview-image {
+				display: none;
+				-webkit-animation-duration: 0.5s;
+				animation-duration: 0.5s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+			.mui-preview-image.mui-preview-in {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
+			.mui-preview-image.mui-preview-out {
+				background: none;
+				-webkit-animation-name: fadeOut;
+				animation-name: fadeOut;
+			}
+			.mui-preview-image.mui-preview-out .mui-preview-header,
+			.mui-preview-image.mui-preview-out .mui-preview-footer {
+				display: none;
+			}
+			.mui-zoom-scroller {
+				position: absolute;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				-webkit-backface-visibility: hidden;
+			}
+			.mui-zoom {
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+			}
+			.mui-slider .mui-slider-group .mui-slider-item img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+				width: 100%;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+				display: inline-table;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.mui-preview-loading {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			.mui-preview-loading.mui-active {
+				display: block;
+			}
+			.mui-preview-loading .mui-spinner-white {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -25px;
+				margin-top: -25px;
+				height: 50px;
+				width: 50px;
+			}
+			.mui-preview-image img.mui-transitioning {
+				-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
+			}
+			@-webkit-keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			p img {
+				max-width: 100%;
+				height: auto;
+			}

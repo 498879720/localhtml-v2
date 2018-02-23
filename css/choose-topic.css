@@ -1,0 +1,74 @@
+.white-bg {
+  background: #ffffff !important;
+}
+.choose-header {
+  width: 32rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #00ced6;
+  line-height: 4.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  -webkit-box-shadow: 3px 3px 6px #e0dfdf;
+  -moz-box-shadow: 3px 3px 6px #e0dfdf;
+  box-shadow: 3px 3px 6px #e0dfdf;
+  margin: 0 auto;
+}
+.choose-header i {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("../images/close.png");
+  background-size: 100%;
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+.choose-main {
+  
+}
+.choose-main .choose-hint {
+  padding: 1rem 1.5rem;
+  background: #f6f6f6;
+  color: #c8c8c8;
+}
+.choose-main .topic-list {
+  padding: 2rem 1.5rem;
+}
+.choose-main .topic-list li {
+  color: #c1c1c1;
+  border: 1px solid #c1c1c1;
+  float: left;
+  padding: 1.1rem 2.1rem;
+  margin: 0.5rem 1.3rem 0.5rem 0;
+  font-size: 1.1rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+}
+.choose-main .topic-list li:nth-child(3n) {
+  margin-right: 0 !important;
+}
+.choose-main .topic-list .active {
+  background: #00ced6;
+  color: #ffffff;
+  border: 1px solid #00ced6;
+}
+.choose-main button {
+  background: #61c634;
+  position: fixed;
+  color: #ffffff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: none;
+}

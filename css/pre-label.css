@@ -1,0 +1,17 @@
+/*方案分类标签页*/
+
+h6{    padding: 1rem;
+    text-align: left;
+    background: #f5f5f5;
+    color: #b3b3b3;
+    font-size: 1.3rem;}
+
+
+.labelTab{ height: auto; transition: all 0.8s;}
+.labelTab ul{ border-color: #f0f0f0; width: 100%; height: auto; overflow: hidden; border-top: solid 1px #f0f0f0;}
+.labelTab ul li{ width: 25%; font-size: 1.2rem; height: 3.5rem; display: block;  line-height: 3.5rem; padding-left: 1rem; float: left; border: solid 1px #f0f0f0; border-top: none; border-left: none;}
+.labelTab ul li a{ display: block;}
+
+.open{ display: block; width: 25%; height: 3.5rem; display: block;  line-height: 3.5rem; padding-left: 1rem; float: left; font-size: 1.2rem; color: #9b9b9d; background: url(../images/upDown_03.png) 60% center no-repeat; background-size:18%;}
+.Up{ background: url(../images/upDown_06.png) 60% center no-repeat;  background-size:18%;}
+.active{ background: #ebeef7;}

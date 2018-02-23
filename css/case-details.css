@@ -1,0 +1,296 @@
+body {
+    background: #f6f6f6;
+}
+
+.date_wrap .case-temp, .add-case-temp {
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    padding: 1.4rem 0 1.2rem;
+    background: #FFFFFF;
+    webkit-box-shadow: 3px 3px 6px #e0dfdf;
+    -moz-box-shadow: 3px 3px 6px #e0dfdf;
+    box-shadow: 3px 3px 6px #e0dfdf;
+    border-bottom: solid 1px #c7cdd2;
+    margin-bottom: 0.7rem;
+}
+.add-date_wrap{
+    padding-bottom: 6rem;
+    background: #ffffff !important;
+}
+
+.date_wrap .case-temp:first-child, .add-case-temp:first-child {
+    padding: 0 !important;
+    background: #f6f6f6;
+}
+
+.date_wrap .case-temp h3, .add-case-temp h3 {
+    font-size: 1.3rem;
+    margin: 0 1.2rem;
+    padding-left: .6rem;
+    color: #4f4f4f;
+}
+
+.date_wrap .case-temp h3 i, .add-case-temp h3 i {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../images/case-icon5.png) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.date_wrap .asker {
+    padding: 1.7rem 0;
+    -webkit-box-shadow: 3px 3px 6px #e0dfdf;
+    -moz-box-shadow: 3px 3px 6px #e0dfdf;
+    box-shadow: 3px 3px 6px #e0dfdf;
+    background: #fff;
+    height: auto;
+    overflow: hidden;
+    border-bottom: solid 1px #c7cdd2;
+    margin-bottom: 0.7rem;
+}
+
+.date_wrap .asker > li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #c3c3c3;
+}
+
+.date_wrap .asker > li:last-child {
+    border: none;
+}
+
+.date_wrap .asker > li span {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #b0b0b0;
+}
+
+.date_wrap .asker > li i {
+    width: 1.9rem;
+    height: 1.8rem;
+    background: url(../images/tit.png) 0 0.1rem no-repeat;
+    background-size: 100%;
+    display: inline-block;
+}
+
+.date_wrap .asker > li:last-child i {
+    background: url(../images/tit.png) 0 -2rem no-repeat;
+    background-size: 100%;
+}
+
+.case-box {
+    height: auto;
+    overflow: hidden;
+    border-bottom: solid 1px #f6f6f6;
+    margin: 0 auto 0.5rem;
+    padding: 1.2rem 1.5rem 1.1rem;
+    -webkit-box-shadow: 3px 3px 6px #e0dfdf;
+    -moz-box-shadow: 3px 3px 6px #e0dfdf;
+    box-shadow: 3px 3px 6px #e0dfdf;
+    background: white;
+}
+
+.last-box {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0 !important;
+}
+
+.case-box p {
+    font-size: 1.2rem;
+    color: #4f4f4f;
+}
+
+.case-box p > span, .case-temp h3 > span{
+    width: 0.8rem;
+    height: 1.2rem;
+    background: url(../images/right-arrow.png) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative;
+    top: 1rem;
+    right: 0;
+    float: right;
+}
+
+.case-box p > i {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../images/case-icon1.png) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative;
+    top: 0.6rem;
+}
+
+.case-box p > i.icon2 {
+    background: url(../images/case-icon2.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.case-box p > i.icon3 {
+    background: url(../images/case-icon3.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.case-box p > i.icon4 {
+    background: url(../images/case-icon4.png) 0 0 no-repeat;
+    background-size: 100%;
+
+}
+
+.case-content {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #979797;
+    margin-left: 3.4rem;
+}
+
+.line-time {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+	line-height:2.5rem    
+}
+
+.case-content li {
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    padding: 0.5rem 1.2rem;
+    border: solid 1px #d2d2d2;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    border-radius: 1.6rem;
+    float: left;
+    margin: 0.3rem 0.3rem;
+
+}
+
+.case-content > span {
+    display: inline-block;
+}
+
+.disease {
+    height: auto;
+    overflow: hidden;
+    width: 90%;
+    margin: 1.5rem auto 0 auto;
+    padding: 0.48rem 0 0.1rem 0;
+}
+
+.disease2 {
+    margin: 0 auto;
+}
+
+.disease > b {
+    font-size: 1.1rem;
+    color: #7191ae;
+    padding: 0.5rem 1.3rem;
+    border: solid 1px #c5d6e7;
+    font-weight: normal;
+    border-radius: 26%;
+    position: relative;
+    top: 0.1rem;
+}
+
+.disease > span {
+    display: inline-block;
+    float: right;
+    margin-right: 1rem;
+    color: #cbcbcb;
+    font-size: 1rem;
+}
+
+.disease .disease-box {
+    height: auto;
+    overflow: hidden;
+    border-left: 1px solid #a7bccf;
+    margin: 0.5rem 0 0 2.5rem;
+    padding: 1.8rem 0 1.8rem 2rem;
+}
+
+.disease-box div {
+    width: 10.4rem;
+    height: 13.85rem;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.disease-box div img {
+    width: 100%;
+    height: 100%;
+}
+
+.case-temp .opinion, .add-case-temp .opinion {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.opinion > p {
+    font-size: 1.2rem;
+    color: #8e8e8e;
+    margin-top: 1rem;
+}
+
+.opinion-list {
+    width: 100%;
+    margin-top: 1rem;
+    background: #f5f7f8;
+    padding: 1.35rem 1rem 1.2rem 1rem;
+}
+
+.opinion-list img {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    float: left;
+    margin-right: 1.3rem;
+}
+
+.opinion-list dl dt {
+
+    color: #5e7d98;
+    margin: .5rem 0;
+}
+
+.opinion-list dl dt b {
+    margin-right: 1rem;
+}
+
+.opinion-list dl dt span {
+    float: right;
+
+}
+
+.opinion-list dl dd span {
+    margin-left: 1rem;
+}
+
+.opinion-list dl dd {
+    color: #aebac4;
+    font-size: 1rem;
+}
+
+.date_wrap button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4.5rem;
+    width: 100%;
+    background: #60c634;
+    color: #ffffff;
+    font-size:1.4rem;
+    letter-spacing: 0.5px;
+}

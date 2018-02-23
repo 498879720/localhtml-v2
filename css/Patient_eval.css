@@ -1,0 +1,19 @@
+/* CSS Reset*/
+body{background: #f6f6f6;}
+
+.PatientBt{ padding: 1.8rem 0; background: #fff; font-weight: 500; font-size: 1.2rem; box-shadow: 1px 1px 2px #dedddd;}
+.PatientBt img{ width: 8%; margin: 0 4%;}
+
+
+.Evalu_det{ height: auto; margin-top: 1rem; background: #fff; padding-bottom: 1.5rem; box-shadow: 1px 1px 2px #dedddd;}
+.Evalu_det h2{ box-shadow: none !important;}
+.Evalu_det_tex{ height: auto; overflow: hidden;}
+.Evalu_det_texT{ width: 84%; height: auto; float: right;}
+
+.Score{ display: inline-block; width: 7.0rem; float: right; margin-right: 2rem; height: 2rem; background:#fff url(../images/ScoreImg_04.png) 0 center  no-repeat; background-size:auto 1.4rem;}
+.ScoreNum{ display: inline-block; height: 2rem; background:#fff url(../images/ScoreImg_03.png) 0 center no-repeat; background-size: auto 1.4rem;}
+.ScoreNum_tex{ display: block; padding-right: 0.3rem; color: #b5b5b5; margin-top: -0.6rem; font-size: 1rem; text-align: right;}
+
+.Evalu_det_texT p{ font-size: 1.2rem; color: #6d6d6d; line-height: 2.5rem; padding-top: 1.2rem; padding-right: 1rem;}
+.Evalu_det_Label{ border-bottom: solid 1px #dbdbdb; padding-bottom: 0.9rem;}
+.Evalu_det_Label span{ display: inline-block; border: solid 1px #dedede; font-size: 1.2rem; padding: 0.5rem 1.6rem; color: #6d6d6d; border-radius:2rem; margin-right: 0.5rem; margin-bottom: 1rem;}

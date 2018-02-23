@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>患者提问</title>
+		<link rel="stylesheet" href="../../css/reset.css" media="screen">
+		<link rel="stylesheet" href="../../css/common.css" media="screen">
+		<link rel="stylesheet" href="../../css/patient-quiz.css" media="screen">
+		<script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left"><img src="../../images/jiantou_left.png" /></a>
+			<h3>患者评价</h3>
+		</header>
+		<div class="container">
+			<div class="main-wrap">
+				<div>
+					<p>我吃了一周的药为什么还是没有好转？</p>
+					<span>2016-8-23</span>
+					<span class="reply"><a href="reply-page.html">回复</a></span>
+				</div>
+
+
+			</div>
+
+			<div class="main-wrap">
+				<div>
+					<p>平时饮食有什么需要注意的吗？</p>
+					<span>2016-8-23</span>
+					<span class="reply"><a href="reply-page.html">回复</a></span>
+				</div>
+			</div>
+
+			<div class="main-wrap">
+				<div>
+					<p>可以同时吃其他的药吗，有没有影响？</p>
+					<span>2016-8-23</span>
+					<span class="reply"><a href="reply-page.html">回复</a></span>
+				</div>
+			</div>
+
+			<div class="main-wrap">
+				<div>
+					<p>大概需要多久复查一次？</p>
+					<span>2016-8-23</span>
+					<span class="reply"><a href="reply-page.html">回复</a></span>
+				</div>
+			</div>
+
+			<div class="main-wrap">
+				<div>
+					<p>平时饮食有什么需要注意的吗？</p>
+					<span>2016-8-23</span>
+					<span class="reply"><a href="reply-page.html">回复</a></span>
+				</div>
+			</div>
+
+		</div>
+
+		
+		<script>
+			$(document).ready(function() {
+
+				var getIndex = JSON.parse(localStorage.getItem("index"));
+				var getreplyVal = JSON.parse(localStorage.getItem("replyVal"));
+
+				var v = "";
+				v += "<div>" +
+					"<p class='compile-main'>" + getreplyVal + "</p>" +
+					"<span>2016-8-23</span>" + "<span class='compile'><a href='reply-page.html'>编辑</a></span >" +
+					"</div>";
+
+				if(getreplyVal) {
+					$(".container .main-wrap").eq(getIndex).append(v).find(".reply").hide();
+				}
+
+				$(".reply,.compile").on("touchend", function() {
+					var index = $(this).parent().parent().index();
+					localStorage.setItem("index", JSON.stringify(index));
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

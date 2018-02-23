@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>姓名</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/patient-info.css">
+
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+
+		<style>
+			body {
+				background: #f6f6f6;
+			}
+			
+			textarea {
+				width: 90%;
+				margin: 5% 1.6rem;
+				height: 10rem;
+				padding: 1rem;
+				font-size: 1.2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left his_t_1"><img src="../../images/jiantou_left.png"/></a>
+			<h3>姓名</h3>
+		</header>		
+		<div class="wrap">
+			<textarea maxlength="25" id="name" placeholder="填写姓名（不超过25个字...）"></textarea>
+			<button>保存</button>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+
+				var name = JSON.parse(localStorage.getItem("name"));
+				$("#name").val(name);
+
+				$("button").on("touchend", function() {
+					var textareaName = $("#name").val()
+
+					localStorage.setItem("name", JSON.stringify(textareaName));
+					location.href = "javascript:history.go(-1)"
+				})
+
+			});
+		</script>
+
+	</body>
+
+</html>

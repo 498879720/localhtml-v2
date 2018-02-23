@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+
+		<title>编辑文章</title>
+		<link rel="stylesheet" href="../../css/reset.css" media="screen">
+		<link rel="stylesheet" href="../../css/common.css" media="screen">
+		<link rel="stylesheet" href="../../css/edit-article.css" media="screen">
+		<script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+	
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>编辑文章</h1>
+		</header>
+		<div class="main">
+			<div class="main-top">
+				<div class="active-bg-color">
+					<i><img id="tu-cover" src="../../images/ed-bg.jpg"></i>
+					<div class="cover-bg">
+						<p>点击修改文章封面</p>
+					</div>
+				</div>
+				<h3>绘画前期准备工作</h3>
+				<p class="main-btn">修改文章所属的方案栏目
+					<a href="../index/Join_column.html"><span>更改位置</span></a>
+				</p>
+			</div>
+
+			<div class="main-content" contenteditable="true">
+				<p>有绘友问起工具过程啥的 我在这里就说下 </p>
+				<h4>一：在打印纸上起线稿，可反复修改 到满意为止，线稿完成后准备拷贝在水彩纸上    </h4>
+				<i><img src="../../images/cd-bg_01.jpg"></i>
+				<h4>二：拷贝台准备好，把线稿放在水彩纸下面固定  开始透写（这里我用的是樱花0.3自动笔）</h4>
+				<h4>（没有拷贝台的可以自制；一块儿玻璃，一个台灯；把玻璃支起来，台灯放下面 就可以拷贝了）</h4>
+				<i><img src="../../images/cd-bg_03.jpg"></i>
+			</div>
+		</div>
+
+		<div class="foot">
+			<a href="#">删除</a>
+			<a href="Article_details_my.html">保存</a>
+		</div>
+		<script>
+			var ss = document.getElementById("tu-cover");
+			shight = $(ss).height();
+			ss.onload = function() {
+			//	alert($(this).height());
+				$('.cover-bg').css("height",shight);
+			}
+		</script>	
+	</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>身份证号</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/patient-info.css">
+
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+
+		<style>
+			body {
+				background: #f6f6f6;
+			}
+			
+			textarea {
+				width: 90%;
+				margin: 5% 1.6rem;
+				height: 10rem;
+				padding: 1rem;
+				font-size: 1.2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left his_t_1"><img src="../../images/jiantou_left.png"/></a>
+			<h3>身份证号</h3>
+		</header>		
+		<div class="wrap">
+			<textarea maxlength="18" id="id" placeholder="填写身份证"></textarea>
+			<button>保存</button>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+
+				var id = JSON.parse(localStorage.getItem("id"));
+				$("#id").val(id);
+
+				$("button").on("touchend", function() {
+					var reg = /^\d{15}|\d{18}$ /;
+					if(reg.test($("#id").val())) {
+						var textareaName = $("#id").val()
+						localStorage.setItem("id", JSON.stringify(textareaName));
+						location.href = "javascript:history.go(-1)"
+
+					} else {
+						alert("请输入正确的身份证号码~");
+					}
+				})
+
+			});
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,67 @@
+.white-bg {
+  background: #ffffff !important;
+}
+body {
+  background: #f6f6f6;
+}
+.container .main-wrap {
+  -webkit-box-shadow: 3px 3px 1px #e0dfdf;
+  -moz-box-shadow: 3px 3px 1px #e0dfdf;
+  box-shadow: 3px 3px 1px #e0dfdf;
+  margin-bottom: 0.6rem;
+}
+.container .main-wrap div {
+  padding: 1.5rem 2rem;
+  background: #ffffff;
+}
+.container .main-wrap div p {
+  color: #5b5b5b;
+  font-size: 1.3rem;
+}
+.container .main-wrap div span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #a9a9a9;
+}
+.container .main-wrap div span:nth-child(3) {
+  float: right;
+}
+.container .main-wrap div span:nth-child(3) a {
+  color: #a9a9a9;
+  font-size: 1rem;
+}
+.container .main-wrap div:first-child {
+  border-bottom: 1px solid #dbdbdb;
+}
+.container .main-wrap div:nth-child(2) {
+  padding: 1.5rem;
+}
+.container textarea {
+  margin-top: 1rem;
+  width: 100%;
+  resize: none;
+  outline: none;
+  border-bottom: 1px solid #e1e7ea;
+  border-top: 1px solid #e1e7ea;
+  background: #ffffff;
+  padding: 1rem;
+  color: #aebac4;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+.container button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 4.5rem;
+  width: 100%;
+  background: #60c634;
+  color: #ffffff;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+.container-reply {
+  padding-bottom: 6rem;
+}

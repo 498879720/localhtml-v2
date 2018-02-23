@@ -1,0 +1,133 @@
+.white-bg {
+  background: #ffffff !important;
+}
+body {
+  background: #f0f0f0;
+}
+button {
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.main .order-main {
+  border-bottom: 0.5rem solid #f0f0f0;
+  padding: 0.5rem;
+}
+.main .order-main > img {
+  width: 12.5%;
+  margin: 2rem 3% 1.5rem 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+.main .order-main dl {
+  position: relative;
+  margin: 1.5rem 0 0 0;
+  width: 83%;
+  float: left;
+  padding-bottom: 1rem;
+}
+.main .order-main dl dt {
+  font-size: 1.5rem;
+  color: #0b0b0b;
+  margin-bottom: 0.6rem;
+}
+.main .order-main dl dt span {
+  font-size: 1.2rem !important;
+  color: #676767;
+}
+.main .order-main dl dd {
+  font-size: 1.2rem;
+  color: #676767;
+}
+.main .order-state h3 {
+  border-bottom: 1px dashed #e0e0e0;
+  padding: 1rem;
+  color: #000000;
+  font-size: 1.5rem;
+}
+.main .order-state h3 span {
+  padding-left: 0.5rem;
+  border-left: 4px solid #07c0be;
+}
+.main .order-state .order-state-main {
+  margin-top: 1.5rem;
+}
+.main .order-state .order-state-main .order-success-btn {
+  background: #ffffff;
+  border: 1px solid #fc9c12;
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: #fc9c12;
+  margin: 0 1rem 0 2rem;
+  padding: 0.6rem 0;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -ms-border-radius: 0.1rem;
+  -o-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  font-size: 1.4rem;
+  box-shadow: 2px 2px 1px #b4b4b4;
+}
+.main .order-state .order-state-main li {
+  padding: 0.6rem 0;
+  text-align: center;
+  width: 20%;
+  color: #ffffff;
+  float: left;
+  background: #fc9c12;
+  margin-right: 0.5rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 1.4rem;
+  box-shadow: 2px 2px 1px #b4b4b4;
+}
+.main .order-state p {
+  width: 100%;
+  text-align: center;
+  color: #989898;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+}
+.main .order-state .order-btn-wrap {
+  width: 48%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.main .order-state .order-btn-wrap button {
+  width: 40%;
+  background: #00ced6;
+  color: #ffffff;
+  padding: 0.6rem 0;
+  font-size: 1.2rem;
+}
+.main .order-state .order-btn-wrap button:last-child {
+  float: right;
+}
+.main .order-state .order-btn-wrap .unactive {
+  background: #cccccc;
+}
+.main .self-inspection h3 {
+  border-bottom: 1px dashed #e0e0e0;
+  padding: 1rem;
+  color: #000000;
+  font-size: 1.5rem;
+}
+.main .self-inspection h3 span {
+  padding-left: 0.5rem;
+  border-left: 4px solid #07c0be;
+}
+.main .self-inspection p {
+  margin-left: 1rem;
+  width: 100%;
+  color: #989898;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}

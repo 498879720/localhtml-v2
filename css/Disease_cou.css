@@ -1,0 +1,26 @@
+body{ min-width: 320px; background: #f6f6f6;}
+
+h3.title{padding: 1.3rem; background: #f6f6f6; font-weight: 100; font-size: 1.1rem; color: #a9a9a9;}
+h6{ padding: 1rem; text-align: center; background: #f5f5f5; color: #b3b3b3; font-size: 1.3rem;}
+.Article_list{ background: #fff; box-shadow: 1px 1px 3px #e3e3e3;}
+.Article_list li{ border-bottom: solid 1px #e9e9e9; padding:2rem 2.3rem; position: relative;}
+.Article_list li:last-child{border: none;}
+.Article_list li h4{ font-size: 1.3rem; height: 1.3rem; line-height: 1.3rem; font-weight: 100;}
+.Article_list li p{ font-size: 1rem; height: 1rem; line-height: 1rem; color: #999999; margin-top: 1rem;}
+.Article_list li span{ position: absolute; top: 1.8rem; right: 2rem; width: 1.5rem; height: 1.5rem; display: inline-block; }
+.Article_list li span input{ display: none;}
+.Article_list li span label{ display: inline-block;  width: 1.5rem; height: 1.5rem; opacity: 0.5; background:url(../images/diseImg_03.png) no-repeat; background-size: 100%; background-position: 0 0;}
+.checked {background-position: 0 100%!important; opacity: 1 !important;}
+
+.To_examine{ position: absolute; top: 2.4rem; right:4.5rem; font-size: 1.2rem; color: #a6a6a6;}
+#Preservation{ position: fixed; bottom: 0; padding: 1.2rem; text-align: center; width: 100%; font-size: 1.6rem; color: #fff; background: #60c634; max-width: 640px; border-radius: 0;}
+/*.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {position: fixed; bottom: 0; padding: 1.2rem; text-align: center; width: 100%; font-size: 1.6rem; color: #fff; background: #60c634; max-width: 640px; border: none; border-radius: 0;}*/
+
+
+
+
+
+/*病程时间*/
+.Basic_time{ height: auto; background: #fff;}
+.Basic_time li{ padding: 1.6rem; font-size: 1.3rem; border-top: solid 1px #e3e3e3; box-shadow: 1px 1px 3px #e3e3e3; }
+.Basic_time li a{color: #4f4f4f;}

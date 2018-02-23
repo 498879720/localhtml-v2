@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="wnumberth=device-wnumberth,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>编号</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/patient-info.css">
+
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+
+		<style>
+			body {
+				background: #f6f6f6;
+			}
+			
+			textarea {
+				width: 90%;
+				margin: 5% 1.6rem;
+				height: 10rem;
+				padding: 1rem;
+				font-size: 1.2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left his_t_1"><img src="../../images/jiantou_left.png"/></a>
+			<h3>编号</h3>
+		</header>		
+		<div class="wrap">
+			<textarea maxlength="11" id="number" placeholder="填写编号"></textarea>
+			<button>保存</button>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+
+				var number = JSON.parse(localStorage.getItem("number"));
+				$("#number").val(number);
+
+				$("button").on("touchend", function() {
+					var reg = /^[A-Za-z0-9]+$/;
+					if(reg.test($("#number").val())) {
+						var textareaName = $("#number").val()
+						localStorage.setItem("number", JSON.stringify(textareaName));
+						location.href = "javascript:history.go(-1)"
+
+					} else {
+						alert("请输入正确的编号~");
+					}
+				})
+			});
+		</script>
+
+	</body>
+
+</html>

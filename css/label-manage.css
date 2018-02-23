@@ -1,0 +1,53 @@
+body {
+    background: #f6f6f6;
+}
+.box-wrap{
+    width:100%;
+    margin-bottom:4.5rem;
+}
+.box-tag{
+    padding:1rem 1.5rem;
+    font-size:1rem;
+    color: #4f4f4f;
+    text-align: left;
+}
+.box-tag a{
+    display: inline-table;
+    float: right;
+    margin-right:0.3rem;
+    font-size:1rem;
+    color: #31d6dc;
+}
+.box-wrap > ul{
+    background: #ffffff;
+    height:auto;
+    overflow: hidden;
+    padding:0.9rem 1rem;
+}
+.box-wrap ul li{
+    font-size:1.2rem;
+    color: #4f4f4f;
+    padding: 0.5rem 1.2rem;
+    border:solid 1px #d2d2d2;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    border-radius:2rem;
+    float: left;
+    margin-right: 0.6rem;
+}
+.box-wrap > ul li span{
+    margin-left:0.6rem;
+}
+.box-tag-content{
+    padding:1.9rem 1.2rem !important;
+}
+.box-tag-content li{
+    margin-bottom:0.6rem;
+}
+/*数据切换头部*/
+.date_tab{ background:#00ced6; height:auto; overflow:hidden; box-shadow:0px 2px 5px #d1d6dc; padding: 0; -webkit-box-shadow:0px 2px 5px #d1d6dc;margin-top: -4.4rem; -moz-box-shadow:0px 2px 5px #d1d6dc; -ms-box-shadow:0px 2px 5px #d1d6dc; -o-box-shadow:0px 2px 5px #d1d6dc;}
+.date_tab li{ width:33%;  text-align:center; float:left; border: none;}
+.date_tab li:first-child{ border:none;}
+.date_tab li a{ font-size:1.2rem; color:#8ee3e8; display: block; padding: 1.6rem;}
+.date_tab_active a{ color:#fff !important; border-bottom: solid 2px #fff;}
+

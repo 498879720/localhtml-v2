@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+<title>选择位置</title>
+<link rel="stylesheet" type="text/css" href="../../css/reset.css" >
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/Join_column.css">
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+</head>
+
+<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>选择位置</h1>
+			<a href="plan-list.html"><button type="submit" class="my_submit">发布</button></a>
+		</header>	
+	 <h6>请选择您要发表的文章所属栏目</h6>
+	 
+	 <ul class="Article_list">
+	 	<li>
+	 		  <h4>书法绘画</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 		  <h5 class="To_examine">待审核</h5>
+	 	</li>
+	 	<li>
+	 		  <h4>手绘技巧</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 		  <h5 class="To_examine">待审核</h5>
+	 	</li>
+	 	<li>
+	 		  <h4>手绘技巧</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 		  <h5 class="To_examine">待审核</h5>
+	 	</li>
+	 	<li>
+	 		  <h4>手绘技巧</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 	</li>
+	 	<li>
+	 		  <h4>手绘技巧</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 	</li>
+	 	<li>
+	 		  <h4>手绘技巧</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 	</li>
+	 	<li>
+	 		  <h4>手绘技巧</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 	</li>
+	 	<li>
+	 		  <h4>手绘技巧</h4>
+	 		  <p>撰写时间 10月18日</p>
+	 	</li>
+	 </ul>
+
+
+<script>
+	$(function(){	
+	 		  	 var idNum = true;
+	 		  	     LiNum = $(".Article_list li");
+	 		  	for(var i=0; i<LiNum.length; i++){
+	 		     var spanChed = "<span><label for='radioBtn"+i+"'></label>"+
+	 		  	 "<input type='radio' name='radio' id='radioBtn"+i+"' /></span>";
+	 		  		$(".Article_list li:eq("+i+")").append(spanChed);
+	 		  	}
+	 		  	
+	 		  	
+	 		  	$(".Article_list li label").click(function(){
+	 		  		$(this).addClass("checked").parents("li").siblings().find("label").removeClass("checked");
+	 		  	})
+	})
+</script>
+
+</body></html>

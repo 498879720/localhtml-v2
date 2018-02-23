@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>发表评论</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<a href="Co_list.html" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>发表评论</h1>
+			<a href="Co_list.html"><button type="submit" class="my_submit">发布</button></a>
+		</header>
+
+		<div class="comment">
+			<form name="comment" action="" method="post" target="">
+				<div contenteditable="true" class="comment_inp">请输入评论</div>
+			</form>
+		</div>
+		<script>
+			$(function() {
+
+				$(".comment_inp").focus(function() {
+					if($(this).text() == "请输入评论") {
+						$(this).text("");
+					}
+				});
+				$(".comment_inp").blur(function() {
+					if($(this).text() == "") {
+						$(this).text("请输入评论");
+					}
+				});
+
+			})
+		</script>
+
+	</body>
+
+</html>

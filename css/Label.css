@@ -1,0 +1,100 @@
+body{ background:#f6f6f6; max-width: 640px;  width: 100%; margin: 0 auto;}
+
+.label_head{ height: auto;}
+
+#plan-info {
+  resize: none;
+}
+.all-topic {
+  /*    margin-top: -0.3rem;*/
+}
+.label_Con{
+	padding-top: 1.2rem;
+}
+
+.white-bg{
+
+  border-top: solid 1px #e3e3e3;	
+	
+}
+
+.all-topic {
+  border: none;
+  border-bottom: 2px solid #dedcdd;
+  font-size: 1.3rem;
+  color: #b2b2b2;
+  outline: none;
+  padding: 1rem 2rem;
+  padding-bottom: 0;
+  background: #ffffff;
+  height: auto;
+  overflow: hidden;
+}
+
+.all-topic p{display: inline-block; border: dashed 1px #cbcbcb; padding: 0.6rem 2.6rem; border-radius: 2rem; margin-bottom: 1rem;}
+
+.all-topic li {
+	
+  position: relative;
+  float: left;
+  color: #9f9f9f;
+  padding: 0.6rem 1.6rem;
+  margin: 0 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  border: solid 1px #C8C7CC;
+}
+.all-topic span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: -0.5rem;
+  top: -0.75rem;
+  z-index: 3;
+  background: #ffffff url("../images/cha-icon.png") center no-repeat;
+  background-size: 79%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #aeaeae;
+}
+.plan-info {
+  padding: 1rem 1rem 2rem;
+  text-align: right;
+  color: #808080;
+  font-size: 1rem;
+}
+.topic-circle {
+  padding: 1rem;
+  height: auto;
+  overflow: hidden;
+}
+.topic-circle p{color: #9f9f9f; margin-left: 1.5rem; margin-top: 0.4rem;}
+
+.topic-list{
+	 height: auto;
+	 overflow: hidden;
+	 padding: 0.8rem;
+	 margin-top: 0.4rem;
+}
+
+
+.topic-circle ul li {
+  float: left;
+  color: #9f9f9f;
+  border: solid 1px #cbcbcb;
+  padding: 0.6rem 1.6rem;
+  margin: 0 0.8rem 0.8rem 0;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+.Preservation{ position: fixed; bottom: 0; padding: 1.5rem; text-align: center; width: 100%; max-width: 640px; font-size: 1.6rem; color: #fff; background: #60c634;}

@@ -1,0 +1,142 @@
+body{ background: #fff; min-width: 320px; max-width: 640px; margin: 0 auto; }
+
+::-webkit-scrollbar  
+		{  
+		    width:0px;  
+		    height:0px;  
+		    /*background-color: transparent;    透明 */
+		    background: #f98;
+		}  
+
+
+
+
+/*话题圈首页banner*/
+.mui-slider-indicator .mui-indicator { background: #fff;    -webkit-box-shadow:none;  box-shadow:none;}
+.mui-slider-indicator .mui-active.mui-indicator { background: #00ced6;  }
+.mui-slider-indicator .mui-indicator{ width: 8px; height: 8px;}
+
+
+/*滑动滑块*/
+.SlideCon{ height:auto; padding: 0.9rem 0; width: 100%; overflow-y: auto; background: #fff;}
+.SlideCon2{ height:auto; padding: 0.9rem 0; width: 100%; overflow-y: auto; background: #fff; position: fixed; top: -8rem; box-shadow:1px 1px 2px #ccc ; z-index: 99; transition: all 0.7s; }
+.SlideConList{ height: auto; width: 88rem; display: flex;}
+.SlideConList a{ display: inline-block; width: 8rem; height: 3.5rem; line-height: 3.5rem; text-align: center;     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; font-size: 1.2rem; color: #fff; color: #fff; background: #000000; margin-left: 1rem; border-radius:0.3rem}
+.SlideConList a:nth-child(1){ background: #99d87a;}
+.SlideConList a:nth-child(2){ background: #4e9bea;}
+.SlideConList a:nth-child(3){ background: #19dcbe;}
+.SlideConList a:nth-child(4){ background: #fc7389;}
+.SlideConList a:nth-child(5){ background: #99d87a;}
+.SlideConList a:nth-child(6){ background: #4e9bea;}
+.SlideConList a:nth-child(7){ background: #19dcbe;}
+.SlideConList a:nth-child(8){ background: #fc7389;}
+
+#masking_layer{ width: 100%; height: 1rem; background: #fff; margin-top: -0.8rem;}
+
+
+
+/*搜索框*/
+.Search{ width: 93%; margin: 0 auto;}
+.Search2{ position: fixed; bottom: 6rem; left: -15%; width: 3rem; height: 3rem; overflow: hidden; transition: all 0.7s;  }
+.Search2 input{ width: 100%; height: 3rem; background:#fff url(../images/search_03.png) 0.3rem center no-repeat; padding-left: 2.5rem; padding-right: 0; background-size: 2rem;}
+#SearchInput{ border: solid 1px #eaeaea; color: #a5a5a5; margin-bottom: 1rem;
+  padding: 0 1rem; background-image: url(../images/TopicCircle_05.png); background-size: 46%; background-position: center; background-repeat: no-repeat; }
+
+.Fixedposition {
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 2px #ccc;
+    }
+
+
+/*话题容器*/
+.CircleConB{ margin-top: -4.2rem;}
+
+.TopicCon{ padding: 0 1.3rem; height: auto; }
+.TopicCon li{ height: auto; padding: 0 1rem; padding-right: 0; overflow: hidden; padding: 1.6rem 0; border-bottom: solid 1px #f1f1f1;}
+.TopicCon li h2{ height: 3.6rem; line-height: 3rem; font-size: 1.4rem; padding-left: 1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.TopicCon li p{ font-size: 1.1rem; line-height: 2.4rem; }
+.TopicCon li p .time{ font-size: 1rem; color: #b7b7b7; margin-left: 1.5rem;}
+.TopicCon li p img{ width: 2.3rem !important; margin-right: 1rem; float: left; border-radius:50%}
+.TopicCon li .Topic_Img{ float: right; width: auto; max-width: 25%;}
+.TopicConTex{ float: left; width: 70%; height: auto; padding-left: 2%;}
+.Fabulous a{display:inline-block; padding: 0 1rem; border-left:solid 1px #b7b7b7 ;color: #b7b7b7; height: 0.9rem; line-height: 0.9rem;}
+.Fabulous a:first-child{ border: none;}
+.Fabulous{ font-size: 1.2rem; }
+
+
+
+
+
+
+
+/*话题主题封面*/
+.cover{ height: 17rem; overflow: hidden; background: url(../images/topliclistBg_02.png) center no-repeat; background-size:100%; text-align: center;}
+.coverImg{ display:block; width: 24%; margin:  0 auto; padding: 0.4rem 0; border-radius:50%; background: rgba(255,255,255,0.2);}
+.coverImg img{ width: 90.5%; display: block; margin: 0 auto; border-radius:50%}
+.cover h2{ font-size: 1.4rem; height: 1.6rem; line-height: 1.6rem; color: #fff; margin-top: 1rem;}
+.cover .follow{ display: inline-block; padding:0rem  0.6rem; height: 2rem; line-height: 2rem; font-size: 1rem; background: rgba(0,0,0,0.2); color: #fff; border-radius:0.3rem; margin-top: 1rem;}
+
+
+
+
+/*话题列表*/
+.mui-segmented-control .mui-control-item{}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar { background: #fff;}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{ color: #fff;}
+.mui-segmented-control .mui-control-item{ line-height: 4rem;}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item { color: #fff; font-size: 1.1rem;}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item { border: none;}
+
+
+
+
+.mui-segmented-control .mui-control-item{ display: inline-block; padding: 0 1rem; width: auto;}
+
+.mui-segmented-control .mui-control-item:first-child{ margin-right: 40%;}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active { border-bottom: solid 2px #fff;}
+
+
+
+
+
+/*问答页*/
+.QAndA{ background: #f6f6f6;}
+
+.QuestionCon{ height: auto; margin-top: 0.8rem; background: #fff; padding: 2rem; box-shadow: 1px 1px 2px #ccc;}
+.QuestionCon h2{ font-size: 1.8rem;}
+.QuestionCon p{ line-height: 2.5rem; font-size: 1.2rem; color: #4f4f4f; margin: 2.2rem 0; max-height:7.5rem ; overflow: hidden;}
+.QuestionCon p span{ color: #adadad;}
+
+.Fabulous{ height: auto; }
+.Fabulous span{ color: #adadad;}
+.Fab2 span{padding-left: 3rem;}
+.BrowseVolume{ background: url(../images/QandA_06.png) 0 center  no-repeat; background-size:2rem; margin-right: 2rem;}
+.FabulousTex{ background: url(../images/QandA_03.png) 0.7rem center no-repeat; background-size:auto 1.3rem }
+.Fabulous .follow{ height: 2.2rem; line-height: 2.2rem; margin-top: -0.5rem; font-size: 1rem; padding: 0 1rem; float: right; background: #99d87a; color: #fff; border-radius:0.2rem}
+
+.FabulousClick{ color: red !important; background: url(../images/like2.png)0.7rem center no-repeat; background-size:auto 1.3rem}
+
+
+/*评论列表*/
+.CommentList{ height: auto;}
+.CommentList li{height: auto; padding: 2rem; background: #fff; margin-top: 0.8rem; box-shadow: 1px 1px 2px #ccc;}
+.CommentList li h3{ height: 2rem; line-height: 2rem; color: #858585; font-size: 1.1rem;}
+.CommentList li h3 img{ width: 2rem; float: left; margin-right: 1rem; border-radius:50%}
+.CommentList li h3 span{ margin-left: 1rem; font-size: 1rem; color: #b7b7b7;}
+.CommentList li h3 span i{ font-style: normal;}
+.CommentList li p{line-height: 2.5rem; font-size: 1.2rem; color: #4f4f4f; padding: 1rem 0;}
+
+.commentCon{ font-size: 1.2rem;}
+.commentCon span{ color: #b7b7b7; padding-right:1.3rem; height: 1.2rem; line-height: 1.2rem; display: inline-block;}
+.commentCon span:first-child{ border-right: solid 1px #b7b7b7;}
+.commentCon span:nth-child(2){ padding-left: 1.3rem;}
+.commentCon i{ font-style: normal;}
+
+
+
+.topiclistfx{
+	width: 2rem;
+}

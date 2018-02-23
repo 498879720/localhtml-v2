@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>回复</title>
+		<link rel="stylesheet" href="../../css/reset.css" media="screen">
+		<link rel="stylesheet" href="../../css/common.css" media="screen">
+		<link rel="stylesheet" href="../../css/patient-quiz.css" media="screen">
+		<script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+
+	</head>
+
+	<body>
+		<div class="container container-reply">
+			<header>
+				<a href="javascript:history.go(-1)" class="his_left"><img src="../../images/jiantou_left.png" /></a>
+				<h3>回复</h3>
+			<!--	<a href="javascript:history.go(-1)" class="header_right">发布</a>-->
+			</header>
+			<textarea class="height-auto" placeholder="请输入回复内容..."></textarea>
+
+			<button>保存</button>
+		</div>
+
+		
+		<script src="../../js/fam-main.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				var getComreplyVal = JSON.parse(localStorage.getItem("replyVal"));
+				if(getComreplyVal !== "") {
+					$(".height-auto").val(getComreplyVal);
+				}
+
+				$("button").on("touchend", function() {
+					var $val = $(".height-auto").val();
+					localStorage.setItem("replyVal", JSON.stringify($val));
+					location.href = "javascript:history.go(-1)";
+				})
+			})
+		</script>
+	</body>
+
+</html>

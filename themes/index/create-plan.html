@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>新建方案</title>
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/create-plan.css">
+		<script src="../../js/zepto.min.js" type="text/javascript"></script>
+		<script src="../../js/zepto.sqq.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>新建方案</h1>
+			<a href="Create_article_My.html"><button type="submit" class="my_submit">下一步</button></a>
+		</header>
+		<div class="plan-main">
+
+			<input type="text" id="plan-name" placeholder="栏目名称">
+			<div class="white-bg">
+				<textarea class="height-auto temp-name" id="plan-info" placeholder="请输入栏目背景简介" maxlength="200"></textarea>
+
+				<ul class="all-topic white-bg clear">
+					<p>点击选择所属话题</p>
+
+				</ul>
+
+			</div>
+			<p class="plan-info white-bg">再次点击可删除，最多可选择三个话题</p>
+			
+			
+			
+			<div class="creat_articCon">			  
+			  <form id="creatForm">
+			  	<div id="xzBtn">	
+			    <label for="Choice" class="ycBtn"></label>
+                <input accept="image/jpg, image/jpeg, image/png" onChange="form_pics.addImg(this);" type="file" id="Choice" style="display: none;" />
+                <img src="" id="uploadImg">
+                <script src="../../js/uploadImg.js"></script>
+                </div>
+			  </form>
+		</div>
+
+		</div>
+
+		<script>
+			 $(".all-topic").click(function(){
+			 	window.location.href="per-lebel.html"
+			 })
+		</script>
+	</body>
+
+</html>

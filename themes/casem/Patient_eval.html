@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+                <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>患者评价</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/Patient_eval.css">
+
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left"><img src="../../images/jiantou_left.png" /></a>
+			<h3>患者评价</h3>
+		</header>
+		<h2 class="PatientBt">
+    	  <img src="../../images/PatientImg_03.png" >综合评价
+    	  <div class="Score"><span class="ScoreNum"></span>
+    	  	<span class="ScoreNum_tex">满意度<span class="ScoreNum_tex_Num">60.9</span>%</span>
+    	  </div>
+    </h2>
+
+		<!--评价详情开始-->
+
+		<div class="Evalu_det">
+			<h2 class="PatientBt">
+    	  <img src="../../images/PatientImg_06.png" >评价描述
+        </h2>
+			<div class="Evalu_det_tex">
+				<div class="Evalu_det_texT">
+					<div class="Evalu_det_Label">
+						<span>医生态度很好</span>
+						<span>回答及时</span>
+						<span>回答专业详细</span>
+						<span>对患者很负责</span>
+					</div>
+					<p>医生服务态度很好，对患者认真负责，能够及时解决问题，耐心回复，总体好评！</p>
+				</div>
+			</div>
+		</div>
+
+		<!--评价详情结束-->
+	</body>
+	<script>
+		$(function() {
+			var ScoreNum = $(".ScoreNum_tex_Num").text(); //获取评分值
+			$(".ScoreNum").width(ScoreNum + "%"); //将获取到的值赋给星星显示框
+		})
+	</script>
+
+</html>

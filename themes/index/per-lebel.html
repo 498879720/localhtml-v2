@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>方案分类</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/pre-label.css">
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script src="../../js/zepto.min.js" type="text/javascript"></script>
+		<script src="../../js/zepto.sqq.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>方案分类</h1>
+			<a href="create-plan.html"><button type="submit" class="my_submit">完成</button></a>
+		</header>
+		
+		<h6>绘画类</h6>
+		<div class="labelTab">
+			<ul>
+				<li>手绘1</li>
+				<li>手绘2</li>
+				<li>手绘3</li>
+				<li>手绘4</li>
+				<li>手绘5</li>
+				<li>手绘6</li>
+				<li>手绘7</li>
+				<li>手绘8</li>
+				<li>手绘9</li>
+				<li>手绘10</li>
+				<li>手绘11</li>
+				<li>手绘12</li>
+				<li>手绘13</li>
+				<li>手绘14</li>
+				<li>手绘15</li>
+				<li>手绘16</li>
+				<li>手绘17</li>
+			</ul>
+		</div>
+		
+		<h6>艺术类</h6>
+		<div class="labelTab">
+			<ul>
+				<li>手绘1</li>
+				<li>手绘2</li>
+				<li>手绘3</li>
+				<li>手绘4</li>
+				<li>手绘5</li>
+				<li>手绘6</li>
+				<li>手绘7</li>
+				<li>手绘8</li>
+				<li>手绘9</li>
+				<li>手绘9</li>
+				<li>手绘7</li>
+				<li>手绘6</li>
+				<li>手绘5</li>
+				<li>手绘4</li>
+				<li>手绘3</li>
+				<li>手绘3</li>
+				<li>手绘2</li>
+				<li>手绘2</li>
+				<li>手绘2</li>
+				
+			</ul>
+		</div>
+		
+		<h6>文学类</h6>
+		<div class="labelTab">
+			<ul>
+				<li>手绘1</li>
+				<li>手绘2</li>
+				<li>手绘3</li>
+				<li>手绘4</li>
+				<li>手绘5</li>
+				<li>手绘6</li>
+				<li>手绘7</li>
+				<li>手绘8</li>
+				<li>手绘9</li>
+				<li>手绘9</li>
+				<li>手绘7</li>
+				<li>手绘6</li>
+				<li>手绘5</li>
+				<li>手绘4</li>
+				<li>手绘3</li>
+				<li>手绘3</li>
+				<li>手绘2</li>
+				<li>手绘2</li>
+				<li>手绘2</li>
+				
+			</ul>
+		</div>
+		
+		<h6>政治类</h6>
+		<div class="labelTab">
+			<ul>
+				<li>手绘1</li>
+				<li>手绘2</li>
+				<li>手绘3</li>
+				<li>手绘4</li>
+				<li>手绘3</li>
+				<li>手绘4</li>
+				<li>手绘3</li>
+				<li>手绘4</li>
+				
+			</ul>
+		</div>
+		
+	</body>
+   <script>
+   	$(function(){
+   		$(".labelTab").each(function(){
+   			var tdLength = $(this).find("li").length;
+   		   $(this).find("li:gt(10)").hide();
+   		   
+   			if(tdLength>=12){
+   				var wxz="<span class='open'>展开</span>";
+   				
+   				$(this).find("ul").append(wxz);
+   			}
+   			
+   			
+   		});
+   		
+   		$(".labelTab li").click(function(){
+   			if($(".active").length<3){
+   				
+   				if($(this).hasClass("active")){
+   					$(this).removeClass("active");  					
+   				} else {
+   					$(this).addClass("active");  					
+   				}
+   				
+   			} else {
+   				$(this).removeClass("active");
+   				alert("最多只可选三个哦")
+   			    return false
+   			}
+   			
+   			
+   				
+   			})
+   		
+   		
+   		$(".open").click(function(){
+   			//var n=$(".open").text();
+   			if($(this).text()=="展开"){
+   				$(this).addClass("Up").text("收起");
+   				$(this).siblings().fadeIn(500);
+   			} else {
+   				$(this).removeClass("Up").text("展开");
+   				$(this).siblings("li:gt(10)").fadeOut(300);
+   			}
+   		})
+   		
+   		
+   		
+   	})
+   </script>
+</html>

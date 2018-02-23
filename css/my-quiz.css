@@ -1,0 +1,19 @@
+.white-bg {
+  background: #ffffff !important;
+}
+.main .quiz-main {
+  width: 96%;
+  margin-left: 2%;
+  padding: 1rem;
+  border-bottom: 1px dashed #e6e6e6;
+}
+.main .quiz-main h3 {
+  color: #1c1d1e;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.main .quiz-main .quiz-wrap span {
+  margin-right: 2rem;
+  color: #8a8b8d;
+  font-size: 1rem;
+}

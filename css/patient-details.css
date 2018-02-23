@@ -1,0 +1,96 @@
+.main{
+    background: #f0f0f0 !important;
+}
+.main-detail{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    margin-bottom:0.4rem;
+    border-bottom:solid 1px #e0e0e0;
+    background: #ffffff;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+.detail-wz{
+    float: left;
+    width:67%;
+}
+.detail-wz > h4{
+    font-size:1.4rem;
+}
+.detail-wz > p{
+    display: inline-block;
+    color: #00ced6;
+    font-size:1.1rem;
+    margin-top: 0.7rem;
+}
+.detail-wz > p span{
+    margin-right:0.7rem;
+    color: #737475;
+}
+.detail-wz > p span:last-child{
+    margin-right:2.2rem;
+}
+.detail-yj{
+    display: inline-block;
+    float: right;
+    margin: 1rem 0.6rem 0 0;
+    border: solid 1px #999999;
+    color: #999999;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.5rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    border-radius: 0.2rem;
+}
+.detail-yj-act{
+    color:#f6a53d !important;
+    border:solid 1px #f6a53d !important;
+}
+
+.main-list li{
+    margin-bottom:0.4rem;
+    background: #ffffff;
+}
+.main-list-top{
+    border-bottom:solid 1px #e0e0e0;
+    /*padding:0.8rem 1rem;*/
+    padding:0.2rem 1rem 0.9rem 1rem;
+}
+.main-list-act >i{
+    background: #f48f0c !important;
+}
+.main-list-act > span{
+    color:#f48f0c;
+    font-size:1.2rem;
+    display: inline-block;
+    float:right;
+    margin-top: 0.5rem;
+}
+.main-list-top > h3{
+    font-size:1.2rem;
+    display: inline-block;
+}
+.main-list-top > i{
+    display: inline-block;
+    width: 0.2rem;
+    height: 1.8rem;
+    background: #07c0be;
+    margin-right: 0.4rem;
+    position: relative;
+    top: 0.5rem;
+}
+.list-ms{
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.list-ms > p{
+    color: #7d7e7f;
+    font-size:1.2rem;
+    text-indent:2em;
+    display: inline-block;
+}
+.list-drug > p{
+    text-indent: 0 !important;
+    margin-right:2.2rem;
+}

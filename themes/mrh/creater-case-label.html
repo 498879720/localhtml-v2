@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>创建新标签</title>
+		<link rel="stylesheet" href="../../css/reset.css" media="screen">
+		<link rel="stylesheet" href="../../css/common.css" media="screen">
+		<link rel="stylesheet" href="../../css/creater-label.css" media="screen">
+		<script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left"><img src="../../images/jiantou_left.png"/></a>
+			<h3>标签</h3>
+		</header>
+		<div class="box-wrap">
+			<div class="box-tag">
+				<ul class="box-tag-title">
+					<li id="tag">添加标签</li>
+				</ul>
+			</div>
+			<p>全部标签</p>
+			<ul class="box-tag-content">
+				<li>类风湿关节炎</li>
+				<li>风湿性关节炎</li>
+				<li>干燥综合征</li>
+				<li>肌炎</li>
+				<li>反应性关节炎</li>
+				<li>未贴标签的病历</li>
+				<li>未贴标签的病历</li>
+			</ul>
+		</div>
+		<div class="foot">保存</div>
+
+		
+		<script>
+			$(function() {
+				var a = [];
+				var s = "";
+
+				$("#tag").attr('contenteditable', 'true');
+				var w = $("#tag").width();
+				$("#tag").click(function() {
+					if($('ul .box-tag-li').length < 3) {
+						$(this).css('min-width', w);
+						$(this).text("");
+						$(this).focus();
+					} else {
+						alert("最多只能添加三个标签");
+						$('#tag').removeAttr('contenteditable');
+						$("#tag").off();
+					}
+				});
+
+				$("#tag").blur(function() {
+					//判断是否为空，字符串或特殊字符
+					var pattern = /^.*[~!@#\$%\^&\*\(\)_+\-=\[\]\{\}\\\|\'\";:,\<\.\>\/\?\s+].*$/;
+					if(!($(this).text() == "" || pattern.test($(this).text()))) {
+						$('ul .box-tag-li').remove();
+						s = "";
+						a.push($("#tag").text());
+						//console.log(a);
+						for(var i = 0; i < a.length; i++) {
+							s += '<li class="box-tag-li">' + a[i] + '</li>';
+						}
+						$('.box-tag-title').prepend(s);
+						$('#tag').text("添加标签");
+					}
+				});
+
+				$('.foot').click(function() {
+					if(a != "") {
+						localStorage.setItem('arr', a);
+						window.location.replace('case-details.html');
+					}
+				});
+				show();
+			});
+
+			function show() {
+				var bb = [];
+				var rs = "";
+				bb = localStorage.getItem('raa').split(',');
+
+				if(bb != "") {
+					for(var i = 0; i < bb.length; i++) {
+						rs += '<li>' + bb[i] + '</li>'
+					}
+					$('.box-tag-content').prepend(rs);
+				}
+			}
+		</script>
+
+	</body>
+
+</html>

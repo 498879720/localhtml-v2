@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>病程时间</title>
+
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/mui.picker.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/Disease_cou.css">
+
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+		<script type="text/javascript" src="../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/mui.picker.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left his_t_1"><img src="../../images/jiantou_left.png"/></a>
+			<h3>病程时间</h3>
+		</header>
+		<div class="Basic_time">
+			<h3 class="title">请输入病程时间</h3>
+			<ul>
+				<li id="Daytime">
+					<a>
+						<span id="DaytimeTex">1991-3-13</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<input type="button" value="保存" id="Preservation" />
+		<script>
+			mui();
+			document.getElementById("Daytime").addEventListener('tap', function(e) {
+
+				var Time = new Date();
+				TimeY = Time.getFullYear();
+				TimeYtoS = TimeY.toString();
+				Mous = (Time.getMonth() + 1).toString();
+				Day = (Time.getDate()).toString();
+				timeP = "";
+				if(Mous > 9) {
+					if(Day > 9) {
+						timeP = TimeYtoS + '-' + Mous + '-' + Day;
+					} else {
+						timeP = TimeYtoS + '-' + Mous + '-0' + Day;
+					}
+				} else {
+					if(Day > 9) {
+						timeP = TimeYtoS + '-0' + Mous + '-' + Day;
+
+					} else {
+						timeP = TimeYtoS + '-0' + Mous + '-0' + Day;
+					}
+				}
+
+				var dtpicker = new mui.DtPicker({
+					type: "date", //设置日历初始视图模式 
+					value: timeP,
+					beginYear: '1990',
+					endYear: TimeY,
+					labels: ['年', '月', '日'], //设置默认标签区域提示语 
+
+				})
+				dtpicker.show(function(e) {
+					console.log(e.text);
+					document.getElementById("DaytimeTex").innerHTML = e.text;
+				})
+
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+
+		<title>预约详情</title>
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/amaze.min.css">
+		<link rel="stylesheet" href="../../css/order-details.css">
+		<script src="../../js/zepto.min.js" type="text/javascript"></script>
+		<script src="../../js/jquery.min.js" type="text/javascript"></script>
+		<script src="../../js/amaze.min.js" type="text/javascript"></script>
+		<script src="../../js/zepto.sqq.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>预约详情</h1>
+		</header>
+		<div class="main">
+			<div class="order-main clear white-bg">
+				<img src="../../images/my-photo-i.png">
+				<dl>
+					<dt>丁芷兰 <span>男 20</span></dt>
+					<dd>手机号 18516670735</dd>
+				</dl>
+			</div>
+
+			<div class="order-state white-bg">
+				<h3><span>预约状态</span></h3>
+
+				<ul class="order-state-main clear">
+					<button class="order-success-btn">预约成功</button>
+					<li>9月12日</li>
+					<li>上午</li>
+					<li>09:30</li>
+				</ul>
+
+				<p>合理安排时间哦，努力为患者提供最佳优质的服务！</p>
+
+				<div class="order-btn-wrap">
+					<button class="am-btn" id="doc-confirm-toggle">已赴约</button>
+					<button class="am-btn" id="undoc-confirm-toggle">未赴约</button>
+				</div>
+				<p class="sure-info">患者有没有来就诊啊? 点击归类啊！</p>
+			</div>
+
+			<div class="self-inspection white-bg" style="margin-top: 0.5rem">
+				<h3><span>自检结果</span></h3>
+				<p>建议就诊：骨科</p>
+			</div>
+
+			<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+				<div class="am-modal-dialog">
+					<div class="am-modal-hd" style="font-size: 1.5rem">温馨提示</div>
+					<div class="am-modal-bd" style="font-size: 1.2rem">
+						信息确认后将不可修改是否确认
+					</div>
+					<div class="am-modal-footer">
+						<span class="am-modal-btn" style="font-size: 1.2rem" data-am-modal-confirm>确定</span>
+						<span class="am-modal-btn" style="font-size: 1.2rem" data-am-modal-cancel>取消</span>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		
+		<script src="../../js/order-details.js" type="text/javascript"></script>
+	</body>
+
+</html>

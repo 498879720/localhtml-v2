@@ -1,0 +1,24 @@
+body{ background:#f6f6f6; max-width: 640px;  width: 100%; margin: 0 auto;}
+
+.Creat_cou{height: auto; margin-bottom: 5rem;}
+.Creat_cou li{height: auto; overflow: hidden; margin-top: 1rem; box-shadow: 1px 2px 2px #dedddd; background:#fff url(../images/jiantou_03.png) 95% center no-repeat; background-size:2% ;}
+.Creat_cou li a{ display: block;padding: 1.4rem 2rem; height: auto; overflow: hidden;}
+.Creat_cou li a img{ width: 9%; float: left; margin-right: 5%; }
+.Creat_cou li a h2{ display: inline-block; font-weight: 500; font-size: 1.3rem; height: 1.3rem; line-height: 2.3rem;}
+
+.Creat_cou  .upImg{ height: auto; background: #fff; padding: 2rem; padding-bottom: 1.6rem; margin-top: 1rem; box-shadow: 1px 2px 2px #dedddd;}
+.Creat_cou  .upImg h3{ color: #bbbbbb; font-size: 1.2rem; font-weight: 300; margin-bottom: 1.6rem;}
+#Preservation{display: none; position: fixed; bottom: 0; padding: 1.5rem; text-align: center; width: 100%; max-width: 640px; font-size: 1.6rem; color: #fff; background: #60c634;}
+
+.UpError{ font-size: 1rem; color: #bbbbbb; line-height: 1.5rem; height: 2rem;}
+.UpError span{ color: #f21111;}
+.Upok{font-size: 1rem; color: #61c634;}
+
+.UpimgCon{height: auto; overflow: hidden;}
+#upImg{ display: inline-block; width: 6rem; height: 6rem; background: url(../images/1_07.png) no-repeat; background-size: 100%; float: left; margin-right: 0.3rem; margin-left: 0.5rem; margin-bottom: 0.7rem; border: solid 1px #fff;}
+#fileImage{ display: none; float: left;}
+.upload_preview{ }
+.upload_append_list{ display:  inline-block; margin-right: 0.3rem; margin-left: 0.5rem; border: solid 1px #f6f6f6; margin-bottom: 0.7rem; position: relative; width: 6rem; height: 6rem; line-height:6rem; overflow: hidden; text-align: center;}
+.upload_append_list a{ font-size: 0.8rem; display: block; text-align: center; background: rgba(0,0,0,0.5); color: #fff; padding: .1rem 0; position: absolute; bottom: 0; width: 100%; line-height: 1.4rem;  }
+.upload_preview strong{ display: inline-block; display: none; font-size: 0.8rem; font-weight: 100; max-width: 6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.upload_preview img{ width: auto; max-width: 6rem; height: auto; max-height: 6rem; }

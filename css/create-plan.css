@@ -1,0 +1,120 @@
+.white-bg {
+  background: #ffffff !important;
+}
+body {
+  background: #f0f0f0;
+}
+.plan-main {
+  background: #f0f0f0;
+}
+.plan-main #plan-name,
+.plan-main #plan-info,
+.plan-main .all-topic {
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed #ebebeb;
+  font-size: 1.3rem;
+  color: #b2b2b2;
+  outline: none;
+  padding: 1.5rem 1rem 1rem 1rem;
+  background: #ffffff;
+}
+.plan-main #plan-info {
+  resize: none;
+}
+.plan-main .all-topic {
+  margin-top: -0.3rem;
+}
+.plan-main .all-topic li {
+  position: relative;
+  float: left;
+  background: #d8dddd;
+  color: #595c5c;
+  padding: 0.5rem 0.7rem 0.7rem;
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
+.plan-main .all-topic span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: -0.75rem;
+  top: -0.75rem;
+  z-index: 3;
+  background: #ffffff url("../images/cha-icon.png") 0.05rem 0 no-repeat;
+  background-size: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #aeaeae;
+}
+.plan-main .plan-info {
+  padding: 1rem 1rem 2rem;
+  text-align: right;
+  color: #808080;
+  font-size: 1rem;
+}
+.plan-main .topic-circle {
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+.plan-main .topic-circle .active {
+  background: #ffffff !important;
+  box-shadow: 0 1px -1px #888888 inset;
+}
+.plan-main .topic-circle ul li {
+  float: left;
+  background: #d8dddd;
+  color: #595c5c;
+  padding: 0.7rem;
+  margin: 0 0.8rem 0.8rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+
+
+
+
+
+/*上传封面图板块*/
+.creat_articCon{
+	background: #fff;	
+	padding: 1rem;
+	height: auto;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	margin-top: 1rem
+}
+
+
+h6 {
+    padding: 1rem;
+    text-align: center;
+    background: #f5f5f5;
+    color: #b3b3b3;
+    font-size: 1.3rem;
+}
+
+
+#xzBtn{ width: 100%; border: solid 1px #e5e5e5; background:#fafafa  url(../images/upBg_03.png) center no-repeat; height: 12rem;overflow: hidden; background-size:100% ; position:relative;}
+#xzBtn2{ width: 100%; border: solid 1px #e5e5e5; background:#fafafa  url(../images/Creatbg_03.png) center no-repeat; height: 12rem;overflow: hidden; background-size:100% ; position:relative;}
+.ycBtn{ display: block; width: 100%; height: 12rem; position: absolute; top: 0;}
+#uploadImg{ width: auto; max-width: 100%; height: auto; max-height: 11.9rem; display: block; margin: 0 auto; }
+.upload_pic{ background: #fff !important;}
+.Article{ font-size: 1.4rem; color: #c0c0c0; margin-top: 1rem;  height: 4rem; padding: 0 1rem; line-height: 4rem; border-bottom: solid 1px #e6e6e6; width: 100%;}
+.ArticleCon{font-size: 1.4rem; color: #c0c0c0; margin-top: 1rem; padding: 1rem; height: auto;  border-bottom: solid 1px #e6e6e6; line-height: 2.3rem;}

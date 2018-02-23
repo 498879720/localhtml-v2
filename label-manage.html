@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>标签管理</title>
+		<link rel="stylesheet" href="css/reset.css" media="screen">
+		<link rel="stylesheet" href="css/common.css" media="screen">
+		<link rel="stylesheet" href="css/label-manage.css" media="screen">
+		<script src="js/zepto.min.js"></script>
+		<script src="js/zepto.sqq.js"></script>
+	</head>
+	<body>
+		<div class="zm-case-top clear">
+				<a href="case-file.html"><span>病历夹</span></a>
+				<a href="label-manage.html" class="active"><span>标签管理</span></a>
+		</div>		
+		<div class="box-wrap">
+			<div class="box-tag">系统标签</div>
+			<ul>
+				<a href="themes/mrh/labelList.html"><li>全部病历<span>30</span></li></a>
+				<li>未贴标签的病历<span>2</span></li>
+			</ul>
+			<div class="box-tag">自定义标签
+				<a href="themes/mrh/creater-label.html">新建标签</a>
+			</div>
+			<ul class="box-tag-content">
+				<li>类风湿关节炎<span>8</span></li>
+				<li>风湿性关节炎<span>10</span></li>
+				<li>干燥综合征<span>5</span></li>
+				<li>肌炎<span>4</span></li>
+				<a href="themes/mrh/labelNextList.html"><li>血管炎<span>8</span></li></a>
+				<li>反应性关节炎<span>9</span></li>
+			</ul>
+
+		</div>
+		<footer>
+			<a href="index.html">
+				<span></span>
+			</a>
+			<a href="case-manage.html">
+				<span></span>
+			</a>
+			<a href="case-file.html">
+				<span class="ative"></span>
+			</a>
+
+			<a href="topic.html">
+				<span></span>
+			</a>
+			<a href="my.html">
+				<span></span>
+			</a>
+		</footer>
+		
+		<script>
+			$(function() {
+				var aa = [];
+				var s = "";
+				aa = localStorage.getItem('arr').split(',');
+
+				if(aa != "") {
+					for(var i = 0; i < aa.length; i++) {
+						s += '<li>' + aa[i] + '</li>'
+					}
+					$('.box-tag-content').prepend(s); //console.log(aa);console.log(s);
+					localStorage.setItem("raa", aa);
+				}
+
+			})
+		</script>
+	</body>
+
+</html>

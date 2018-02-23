@@ -1,0 +1,147 @@
+.discuss{
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    height: auto;
+    overflow: hidden;
+    background: #f5f5f5!important;
+}
+.comment-head{
+    background: #00ced6;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    line-height: 4.5rem;
+    -webkit-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    -moz-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    text-align: center;
+}
+.comment-head i{
+    display: inline-block;
+    width:1.2rem;
+    height:1.75rem;
+    background: url("../images/go.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    margin:1.5rem 2rem 1rem 1.6rem;
+    float: left;
+}
+.comment-head span{
+    display: inline-block;
+    font-size:1.2rem;
+    margin-right:1.6rem;
+    float: right;
+}
+
+.comment-tt{
+    padding:1rem;
+    background: #ffffff;
+}
+.comment-top > span{
+    display: inline-block;
+    width:25%;
+    float: left;
+}
+.comment-top > span img{
+    width:94%;
+    height:100%;
+}
+.comment-top ul{
+    float: right;
+    width:70%;
+}
+.comment-top ul li{
+    width: 100%;
+    margin: 0.3rem 0;
+    font-size: 1.5rem;
+    color: #050505;
+    height: 2rem;
+    line-height: 2rem;
+}
+.comment-top li:nth-child(2){
+    color: #e7802c;
+}
+.comment-top li i{
+    display: inline-block;
+    margin-right:0.4rem;
+}
+.comment-top li:first-child i{
+    background:url("../images/xinxi_02.png") no-repeat;
+    width:1.2rem;
+    height:1.2rem;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}
+.comment-top li:nth-child(2) i{
+    background:url("../images/xinxi_04.png") no-repeat;
+    width:1.2rem;
+    height:1.25rem;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}.comment-top li:last-child i{
+     background:url("../images/xinxi_06.png") no-repeat;
+     width:1.2rem;
+     height:1.2rem;
+     -webkit-background-size:100% 100%;
+     background-size:100% 100%;
+ }
+ .hospital-tit{
+     font-size:1.4rem;
+     color: #050505;
+     margin-top:1rem;
+ }
+ .hospital-tit span{
+     display: inline-block;
+     background: url("../images/xinxi_08.png") no-repeat;
+     width:1.15rem;
+     height:1.2rem;
+     margin-right:0.4rem;
+     -webkit-background-size:100% 100%;
+     background-size:100% 100%;
+ }
+.comment-content{
+    margin-top:0.5rem;
+    background: #ffffff;
+}
+.comment-content ul{
+    padding:1rem;
+}
+.comment-content ul li{
+    width:100%;
+}
+.comment-content li h4{
+    border-bottom:solid 1px #e5e5e5;
+    padding-bottom:0.8rem;
+    margin-bottom:0.9rem;
+}
+.comment-content li h4 span{
+    border-bottom:solid 1px #00ced6;
+    color: #7f7f80;
+    font-size:1.4rem;
+    padding-bottom:0.8rem;
+}
+.comment-content h4 span i{
+    display: inline-block;
+    background: url(../images/xinxi_11.png) no-repeat;
+    width: 1.15rem;
+    height: 1.3rem;
+    margin-right: 0.4rem;
+    position: relative;
+    top: 0.2rem;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}
+.comment-content li p{
+    line-height: 2.2rem;
+    font-size:1.4rem;
+}
+.comment-content li:last-child h4 i{
+    width:1.35rem;
+    height:1.65rem;
+    background: url("../images/xinxi_13.png") no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}
+.comment-content li:last-child{
+    margin-top:0.6rem;
+}

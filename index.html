@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>推 荐</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name=”apple-mobile-web-app-capable” content=”yes” />
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/recommend.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/zepto.sqq.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>推 荐</h1>
+		</header>
+		<div class="container">
+			<div class="main swiper-container">
+
+				<div class="swiper-wrapper">
+					<div class="main-content content1 swiper-slide">
+						<img src="images/per1.jpg" width="100%" height="100%" />
+						<p>教练营内容</p>
+						<h4>如何才能成就你的冠军之路？</h4>
+						<div class="content-bot">
+							<a href="themes/index/Article_directory.html">
+								<div class="details">详情</div>
+							</a>
+							<ul>
+								<li class="heart" id="like1" rel="like"><i class="act"></i><span class="likeCount" id="likeCount1">1</span></li>
+								<li onClick="like(this)"><i></i><span>1</span></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <class=content1> -->
+					<div class="main-content content2 swiper-slide">
+						<img src="images/per2.jpg" width="100%" height="100%" />
+						<p>教练营内容</p>
+						<h4>怎样训练才能让我成为更<br>出色的运动员？</h4>
+						<div class="content-bot">
+							<a href="themes/index/Article_directory.html">
+								<div class="details">详情</div>
+							</a>
+							<ul>
+								<li class="heart" id="like2" rel="like"><i class="act"></i><span class="likeCount" id="likeCount2">1</span></li>
+								<li onClick="like(this)"><i></i><span>1</span></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <class=content2> -->
+					<div class="main-content content3 swiper-slide">
+						<img src="images/per3.jpg" width="100%" height="100%" />
+						<p>训练内涵</p>
+						<h4>迈勒斯沃特森的全面发力训练</h4>
+						<div class="content-bot">
+							<a href="themes/index/Article_directory.html">
+								<div class="details">详情</div>
+							</a>
+							<ul>
+								<li class="heart" id="like3" rel="like"><i class="act"></i><span class="likeCount" id="likeCount3">1</span></li>
+								<li onClick="like(this)"><i></i><span>1</span></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <class=content3> -->
+					<div class="main-content content4 swiper-slide">
+						<img src="images/per1.jpg" width="100%" height="100%" />
+						<h4>是否感觉意犹未尽？点击查看更多吧</h4>
+						<p>
+							<a href="themes/index/plan-list.html">全部方案</a>
+						</p>
+					</div>
+					<!-- <class=content4> -->
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<a href="index.html">
+				<span class="ative"></span>
+			</a>
+			<a href="case-manage.html">
+				<span></span>
+			</a>
+			<a href="case-file.html">
+				<span></span>
+			</a>
+
+			<a href="topic.html">
+				<span></span>
+			</a>
+			<a href="my.html">
+				<span></span>
+			</a>
+		</footer>
+		<script>
+			var bodyheight = document.documentElement.clientHeight;
+			var s = bodyheight - $("header").height() - $("footer").height();
+			$(function() {
+
+				$(".main-content").css('height', s);
+				$(".swiper-container").css('height', s);
+				var mySwiper = new Swiper('.swiper-container', {
+					direction: 'vertical',
+					height: s,
+				});
+
+				$('.content-bot').on("click", '.heart', function() {
+
+					var A = $(this).attr("id");
+					var B = A.split("like");
+					var messageID = B[1];
+					var C = parseInt($("#likeCount" + messageID).html());
+					var D = $(this).attr("rel");
+
+					if(D === 'like') {
+						$("#likeCount" + messageID).html(C + 1);
+						$(this).addClass("heartAnimation").attr("rel", "unlike");
+					} else {
+						$("#likeCount" + messageID).html(C - 1);
+						$(this).removeClass("heartAnimation").attr("rel", "like");
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>患者信息</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/patient-info.css">
+
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+		<script type="text/javascript" src="../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/mui.picker.min.js" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<a href="NewCase.html" class="his_left his_t_1"><img src="../../images/jiantou_left.png"/></a>
+			<h3>患者信息</h3>
+		</header>		
+		<div class="wrap">
+			<div class="mui-table-view">
+				<h3>基本信息</h3>
+				<div class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="patient-info-name.html">
+						姓名
+						<span id="patient-name">张三</span>
+					</a>
+				</div>
+
+				<div class="mui-table-view-cell" id="sex">
+					<a class="mui-navigate-right" href="#">
+						性别
+						<span id="sexSet">男</span>
+					</a>
+				</div>
+				<div class="mui-table-view-cell" id="Birthday">
+					<a class="mui-navigate-right" href="#">
+						出生日期
+						<span id="BirthdayNum">1991-3-13</span>
+					</a>
+				</div>
+				<div class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="patient-info-phone.html">
+						手机号
+						<span id="patient-phone">18512234565</span>
+					</a>
+				</div>
+				<div class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="patient-info-id.html">
+						身份证号
+						<span id="patient-id">610104197603128322</span>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="mui-table-view">
+
+				<h3>就诊信息</h3>
+				<div class="mui-table-view-cell" id="dateTime">
+					<a class="mui-navigate-right" href="#">
+						就诊日期
+						<span id="dateTimeNum">2016-8-13</span>
+					</a>
+				</div>
+
+				<div class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="patient-info-technical.html">
+						科室
+						<span id="patient-technical">骨科</span>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="mui-table-view">
+
+				<h3>编号</h3>
+				<div class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="patient-info-numbertype.html">
+						编号类型
+						<span id="patient-numberType">门诊号</span>
+					</a>
+				</div>
+				<div class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="patient-info-number.html">
+						编号
+						<span id="patient-number">1015014018</span>
+					</a>
+				</div>
+
+			</div>
+			<!--<p class="click-more">查看更多</p>-->
+			<a href="NewCase.html"><button>保存</button></a>
+		</div>
+
+		<script>
+			mui();
+
+			DateTime("Birthday", "BirthdayNum");
+			DateTime("dateTime", "dateTimeNum");
+
+			function DateTime(id, textId) {
+				document.getElementById(id).addEventListener('tap', function(e) {
+					var Time = new Date();
+					TimeY = Time.getFullYear();
+					TimeYtoS = TimeY.toString();
+					Mous = (Time.getMonth() + 1).toString();
+					Day = (Time.getDate()).toString();
+					timeP = "";
+					if(Mous > 9) {
+						if(Day > 9) {
+							timeP = TimeYtoS + '-' + Mous + '-' + Day;
+						} else {
+							timeP = TimeYtoS + '-' + Mous + '-0' + Day;
+						}
+					} else {
+						if(Day > 9) {
+							timeP = TimeYtoS + '-0' + Mous + '-' + Day;
+
+						} else {
+							timeP = TimeYtoS + '-0' + Mous + '-0' + Day;
+						}
+					}
+
+					var dtpicker = new mui.DtPicker({
+						type: "date", //设置日历初始视图模式
+						value: timeP,
+						beginYear: '1920',
+						endYear: TimeY,
+						labels: ['年', '月', '日'], //设置默认标签区域提示语
+
+					})
+					dtpicker.show(function(e) {
+						console.log(e.text);
+						document.getElementById(textId).innerHTML = e.text;
+					})
+
+				})
+			}
+
+			(function() {
+				var picker = new mui.PopPicker();
+				document.getElementById("sex").addEventListener('tap', function(e) {
+
+					picker.setData([{
+						value: 'No',
+						text: '保密'
+					}, {
+						value: 'Boy',
+						text: '男'
+					}, {
+						value: 'girl',
+						text: '女'
+					}, ]);
+					picker.show(function(selectItems) { //将选取的值处理
+						document.getElementById("sexSet").innerHTML = selectItems[0].text;
+					})
+				})
+			})()
+		</script>
+
+		<script src="../../js/get-value.js"></script>
+		<script src="../../js/set-value.js"></script>
+
+	</body>
+
+</html>

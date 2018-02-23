@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+                <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>病例详情</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/Case_details.css">
+
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<a href="../../case-manage.html" class="his_left his_t_1"><img src="../../images/jiantou_left.png" /></a>
+			<h3>病例详情</h3>
+		</header>
+		<ul class="Case_con">
+			
+			<li>
+				<a href="case-label.html"><h3><img src="../../images/CaseImg2_03.png" >标签 </h3></a>
+				<div class="Case_con_tex"><span class="Label">骨质疏松</span></div>
+			</li>
+			
+			<li>
+				<a href="patient-info.html">
+					<h3>  	   	 	
+   	   	 		<img src="../../images/CaseImg2_06.png" >
+   	   	 		患者信息   	   	 	
+   	   	 	</h3>
+					<p>张超 男 40</p>
+				</a>
+			</li>
+			<li>
+				<a href="Case_details_second.html">
+					<h3>  	   	 	
+   	   	 		<img src="../../images/CaseImg2_08.png" >
+   	   	 		病例详情   	   	 	
+   	   	 	</h3>
+				</a>
+			</li>
+			<li>
+				<a href="Course.html">
+				<h3 class="CourseBt">  	   	 	
+   	   	 		<img src="../../images/CaseImg2_10.png" >
+   	   	 		患者病程  	 	
+   	   	 	</h3></a>
+				<div class="CourseCon">
+					<h2><Span class="bt">复诊</Span>  <span class="Time">2016.04.16</span></h2>
+					<div class="zoomImgCon">
+						<div class="ImaBox">
+							<img src="../../images/CaseImg2_13.png" data-preview-src="" data-preview-group="1">
+						</div>
+					</div>
+
+					<h2><Span class="bt">初诊</Span>  <span class="Time">2016.04.12</span></h2>
+					<div class="zoomImgCon">
+						<div class="ImaBox">
+							<img src="../../images/CaseImg2_16.png" data-preview-src="" data-preview-group="1">
+							<img src="../../images/CaseImg2_18.png" data-preview-src="" data-preview-group="1">
+						</div>
+					</div>
+				</div>
+
+			</li>
+
+			<li>
+				<a href="Improvement.html">
+					<h3>  	   	 	
+   	   	 		<img src="../../images/CaseImg2_22.png"/>
+   	   	 		改善方案	   	 	
+   	   	 	</h3>
+				</a>
+			</li>
+
+			<li>
+				<a href="patient-quiz.html">
+					<h3>  	   	 	
+   	   	 		<img src="../../images/CaseImg2_24.png" >
+   	   	 		患者提问
+   	   	 		<span class="PromptNum">3</span>
+   	   	 	</h3>
+				</a>
+			</li>
+
+			<li>
+				<a href="Patient_eval.html">
+					<h3>  	   	 	
+   	   	 		<img src="../../images/CaseImg2_26.png" >
+   	   	 		患者评价	   	 	
+   	   	 	</h3>
+				</a>
+			</li>
+		</ul>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/mui.zoom.js"></script>
+		<script src="../../js/mui.previewimage.js"></script>
+		<script>
+			mui.previewImage();
+			mui('body').on('tap','a',function(){document.location.href=this.href;});
+		</script>
+
+	</body>
+
+</html>

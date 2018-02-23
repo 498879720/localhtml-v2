@@ -1,0 +1,155 @@
+body{
+
+}
+header{
+
+}
+.my-warp{
+	width: 100%;
+	min-height:15rem;
+	background: url(../images/my_top.png) no-repeat top;
+	background-size:100%;
+	margin-bottom: 4.9rem;
+}
+.my-content{
+	width: 100%;
+}
+.my-info{
+	width:  93.75%;
+	margin: auto;	
+	height: 9.9rem;
+}
+.my-info>div{
+	width:33.3%;
+	height: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+}
+.info-right,.info-left{
+	padding-top: 1.6rem;
+}
+.info-left span:nth-of-type(1),.info-right span:nth-of-type(1){
+	width: 2.7rem;
+	line-height: 2.7rem;
+	text-align: center;
+	border-radius: 50%;
+	background: #46d6d6;
+	display:block;
+	margin: auto;
+	color: #ffffff;
+}
+.info-left span:nth-of-type(2),.info-right span:nth-of-type(2),.info-centent span:nth-of-type(2){
+	width:100%;
+	line-height: 2rem;
+	text-align: center;
+	display:block;
+	color: #FFFFFF;
+}
+span a{
+	color: #FFFFFF;	
+}
+.info-centent span:nth-of-type(1){
+	display: block;
+    margin: auto;
+    width: 6rem;
+}
+.info-centent span:nth-of-type(1) img{
+	width: 100%;
+}	
+.info-centent span:nth-of-type(2){
+	margin-top: 15px;
+	color: #FFFFFF;
+}		
+.my-substance{
+	
+}
+.my-substance ul li{
+	height: 5.5rem;
+	width: 100%;
+	display: block;
+	padding-left: 3.5%;
+}
+ul a:nth-of-type(1) li>i{
+	background: url(../images/my_1.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(2) li>i{
+	background: url(../images/my_2.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(3) li>i{
+	background: url(../images/my_3.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(4) li>i{
+	background: url(../images/my_4.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(5) li>i{
+	background: url(../images/my_5.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(6) li>i{
+	background: url(../images/my_6.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(7) li>i{
+	background: url(../images/my_7.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(8) li>i{
+	background: url(../images/my_8.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(9) li>i{
+	background: url(../images/my_9.png) repeat scroll top left;
+	background-size: 100%;	
+}
+ul a:nth-of-type(10) li>i{
+	background: url(../images/my_10.png) repeat scroll top left;
+	background-size: 100%;	
+}
+li>i{
+	width: 2.3rem;
+	height: 2.3rem;
+	display: inline-block;
+	margin-top:1.5rem;
+	margin-left: 1rem;
+}
+li div{
+	width: 86%;
+	height:100%;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid #e8e7e7;
+	padding-top: 1.1rem;
+	position: relative;
+}
+li div i{
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	background: url(../images/right_01.png) repeat scroll top left;
+	background-size: 100%;
+	position: absolute;
+	right: 2.5rem;
+	top:46%
+}
+li div span{
+	color: #252525;
+	font-size: 1.3rem;
+	font-weight: 1000;
+}
+li div p{
+	color: #cacaca;
+	margin-top:0.5rem	
+}
+.border-bg{
+	width: 100%;
+	height: .8rem;
+	display: block;
+	background: #f0efef;
+}
+
+.my-substance ul a:nth-child(5) div, .my-substance ul a:nth-child(10) div, .my-substance ul a:nth-child(12) div{ border-bottom: none;}

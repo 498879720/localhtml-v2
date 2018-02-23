@@ -1,0 +1,140 @@
+.discuss{
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    height: auto;
+    overflow: hidden;
+    margin-top:-4.5rem;
+}
+.comment-head{
+    background: #00ced6;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    line-height: 4.5rem;
+    -webkit-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    -moz-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+}
+.comment-head i{
+    display: inline-block;
+    width:1.75rem;
+    height:1.15rem;
+    background: url("../images/carrow.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    margin:1.7rem 2rem 1rem 1.6rem;
+    float: left;
+}
+.comment-head span{
+    display: inline-block;
+    width:2.1rem;
+    height:1.8rem;
+    background: url("../images/cpx.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    margin:1.4rem 1.6rem 0 0;
+    float: right;
+}
+
+.comment-content li{
+    padding:1.8rem 0 0 1.3rem;
+}
+.comment-content li > i{
+    width:11%;
+    display: inline-block;
+    float: left;
+    margin-top: 0.5rem;
+}
+.comment-content li >i img{
+    width:100%;
+    height:100%;
+}
+.list-content{
+    float: right;
+    border-bottom:solid 1px #e5e5e5;
+    width: 85%;
+}
+.list-content h4{
+    font-size:1.3rem;
+    color: #565656;
+}
+.list-content span{
+    display: inline-block;
+    margin-top:0.6rem;
+    color: #cfcfcf;
+    font-size:1rem;
+}
+.list-content p{
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    color: #4f4f4f;
+    width: 95%;
+}
+.zan{
+    float: right;
+    margin:0.5rem 0.6rem 1.3rem 0;
+}
+.zan i{
+    display: inline-block;
+    margin-left:1.2rem;
+    position: relative;
+}
+.zan i:first-of-type{
+    width:1.45rem;
+    height:1.4rem;
+    background: url("../images/czan.png")no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    top:0.2rem;
+}
+.zan i:last-of-type{
+    width:1.6rem;
+    height:1.4rem;
+    background: url("../images/pinglun.png")no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    top:0.3rem;
+}
+.zan span{
+    font-size:1.1rem;
+    color: #c1c1c1;
+    margin-left:0.6rem;
+}
+
+.discuss-foot{
+    background: #FFFFFF;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:auto;
+    padding:1rem;
+    border-top:solid 1px #d3d3d3;
+}
+.discuss-foot > i{
+    display: inline-block;
+    background: url(../images/csend.png) no-repeat;
+    width: 1.85rem;
+    height: 1.6rem;
+    float: right;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1rem;
+}
+.foot-content{
+    width:87%;
+    float: left;
+}
+.foot-content .add-comment{
+    width: 95%;
+    margin-left: 2%;
+    font-size:1.4rem;
+    color: #a9a9a9;
+    height:auto;
+}
+.foot-content > .add-bot{
+    height: 0.9rem;
+    border: solid 1px #a9a9a9;
+    border-top: none;
+}

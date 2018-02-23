@@ -1,0 +1,57 @@
+.home-page {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#suggest-header {
+    width: 100%;
+    position: relative;
+    background: #00ced6;
+}
+#suggest-header > a {
+    display: inline-block;
+    margin: 1.3rem 0 0 0.8rem;
+    float: left;
+}
+#suggest-header > a img {
+    width: 1.4rem;
+    height: 0.9rem;
+}
+#suggest-header input[type='text'] {
+    width: 74%;
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 1px 1px 1px rgba(6, 0, 1, 0.2) inset;
+    box-shadow: 1px 1px 1px rgba(6, 0, 1, 0.2) inset;
+    padding: 0.6rem 0.5rem 0.6rem 2.7rem;
+    margin: 0.8rem 0 0.8rem 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: #efefef url(../images/search.png) no-repeat 0.8rem 0.7rem;
+    background-size: 1.2rem 1.2rem;
+}
+#suggest-header button {
+    display: inline-block;
+    float: right;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 1.2rem 0.7rem 0 0;
+    background: none;
+    border: none;
+    outline: none;
+    width: 11%;
+    text-align: center;
+}
+#suggest-header button a{
+    color: #FFFFFF;
+    font-size:1.3rem;
+}

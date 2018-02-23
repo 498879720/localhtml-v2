@@ -1,0 +1,76 @@
+.Pro_Head_pro{  height: auto; overflow: hidden; background: #fff; box-shadow: 0px 2px 10px #c8cdd3; margin-bottom: 0.5rem;}
+.Pro_Head_pro .top{ height: auto; overflow: hidden; padding: 1rem; padding-bottom: 0;}
+.Pro_Head_pro .top .Head_por{ width: 16.7%; display:block; float: left;}
+.Pro_Head_pro .top .Pro_name { width: 81%; float: right;}
+.Pro_Head_pro .top .Pro_name h2{ font-size: 1.5rem; font-weight: 500; line-height: 1.3rem; padding-top: 0.3rem; margin-bottom: 8%; color: #646464;}
+.Pro_Head_pro .top .Pro_name h2 .chapter{ font-size: 1.1rem; color: #0267b3; margin-left: 0.4rem;}
+.Pro_Head_pro .top .Pro_name h2 .reading_num{ font-size: 0.8rem; float: right; color: #4d4d4d;}
+.Pro_Head_pro .top .Pro_name h2 .follow{ display: inline-block; padding: 0.2rem 0.4rem; color: #fff; float: right; background: #3e6eb5; border-radius:0.1rem; padding-right: 0.6rem; font-size: 0.8rem; margin-top: -0.2rem; margin-left: 0.4rem;}
+.Pro_Head_pro .top .Pro_name h5{ font-weight: 500; color: #00ced6; font-size: 1.1rem;}
+.Pro_Head_pro p{ line-height: 2.4rem; color: #4e4e4e; font-size: 1.4rem; margin: 0.6rem 0; padding: 0 1rem; overflow: hidden;}
+
+
+.ZanTimer{ line-height: 1rem; font-size: 0.9rem; color: #b3b3b3; padding: 1rem; padding-top: 0;}
+.ZanTimer span{padding-left: 1.3rem; }
+.ZanTimer .zan{  background: url(../images/Programme2_07.png) 0 50% no-repeat; background-size: 1rem; margin-right: 3rem; }
+.ZanTimer .comment{ background: url(../images/Programme2_10.png) 0 50% no-repeat; background-size: 1rem; }
+.ZanTimer .timer{ float: right;}
+
+.Time{ font-size: 1.1rem; border-top:solid 1px #e6e6e6; padding: 0.6rem 1.2rem; color: #adadad; }
+.Time span{ margin-right: 1rem;}
+.Comment, .Fabulous{ float:right;}
+
+
+
+
+
+/*章节目录*/
+.Chap_dir{ height:auto; overflow: hidden; background: #fff; margin-bottom: 5rem; box-shadow: 0px 2px 10px #c8cdd3;}
+.Chap_dir h3{ font-size: 1.2rem; font-weight: 400; padding: 0.8rem; color: #828282; border-bottom: solid 1px #e6e6e6;}
+.Chap_dir ul{ width: 95%; height: auto; margin: 1.8rem auto;}
+.Chap_dir ul li{ height: auto; padding-left: 2.8rem; padding-bottom: 2.1rem; }
+.Chap_dir ul li:nth-child(odd){background:url(../images/imgBg_09.png) 0.6rem 0px repeat-y; background-size: 1.4rem; }
+.Chap_dir ul li:nth-child(even){background:url(../images/imgBg_07.png) 0.6rem 0px repeat-y; background-size: 1.4rem; }
+
+
+.Chap_dir ul li h5{ font-weight: 400; font-size: 1.4rem; line-height: 1.4rem; margin-bottom: 0.8rem;}
+.Chap_dir ul li h5 span{ display: inline-block; font-size: 1.2rem; padding: 0px 0.5rem;}
+.Chap_dir ul li h5 .executed{color: #8b9ab0 !important; }
+.Chap_dir ul li h5 .unexecuted{ color: #3ee2e8;}
+.Chap_dir ul li p{ font-size: 1rem; color: #8a8a8a; line-height: 1rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+
+
+
+/*'底部'*/
+.bottom_b{ padding: 0.8rem 0; display: block; width: 101%; max-width: 640px; min-width: 320px; background: #fff; overflow: hidden; box-shadow: -5px 2px 10px #c4c4c4; position: fixed; bottom: 0px;} 
+.bottom_b span{ display: inline-block; width: 32%; height: auto; border-left: solid 1px #e6e6e6;}
+.bottom_b span:first-child{ border: none;}
+.bottom_b span div{ width: 5rem; height:auto; margin: 0 auto;}
+.bottom_b span div .tubiao{ width: 2rem; height: 2.8rem; display: block; margin: 0 auto; margin-bottom: 0.1rem;}
+.bottom_b span div .tubiao small{ padding:0 0.3rem; border:solid 1px #fff; border-radius:1rem; font-size: 0.5rem; display: block; color: #fff; font-weight: 500; background: #808080; min-width: 1rem; text-align: center; font-size: 1rem; position: absolute; left: 50%; top: -10%;}
+.this div .tubiao small{ background: #3e6eb5 !important;}
+.bottom_b span .tubiao:nth-child(1){ background:url(../images/Doctorlist_10.png) 50% no-repeat; background-size:91%}
+.bottom_b span:nth-child(2) .tubiao{ background:url(../images/programT_09.png) 50% no-repeat; background-size:91%}
+.bottom_b span:nth-child(3) .tubiao{ background:url(../images/programT_06.png) 50% no-repeat; background-size:91%}
+
+.bottom_b span div h5{ white-space: nowrap; font-weight: 400; font-size: 1rem; color: #808080; text-align: center; line-height: 1rem; display: block;}
+.this div h5{ color:#3e6eb5 !important;}
+
+
+
+
+/*'底部（自己）'*/
+.bottom_my{ padding: 0.8rem 0; display: none; width: 101%; max-width: 640px; min-width: 320px; background: #fff; box-shadow: -5px 2px 10px #c4c4c4; position: fixed; bottom: 0px;} 
+.bottom_my span{ display: inline-block; width: 33%; height: auto; border-left: solid 1px #e6e6e6;}
+.bottom_my span:first-child{ border: none;}
+.bottom_my span div{ width: 5rem; height:auto; margin: 0 auto;}
+.bottom_my span div .tubiao{ width: 2rem; height: 2.8rem; display: block; margin: 0 auto; margin-bottom: 0.1rem; position: relative; }
+.bottom_my span div .tubiao small{ padding:0 0.3rem; border:solid 1px #fff; border-radius:1rem; font-size: 0.5rem; display: block; color: #fff; font-weight: 500; background: #808080; min-width: 1rem; text-align: center; font-size: 1rem; position: absolute; left: 50%; top: -10%;}
+.this div .tubiao small{ background: #3e6eb5 !important;}
+.bottom_my span .tubiao:nth-child(1){ background:url(../images/bottombBg_03.png) 50% no-repeat; background-size:91%}
+.bottom_my span:nth-child(2) .tubiao{ background:url(../images/bottombBg_05.png) 50% no-repeat; background-size:91%}
+.bottom_my span:nth-child(3) .tubiao{ background:url(../images/bottombBg_07.png) 50% no-repeat; background-size:91%}
+
+.bottom_my span div h5{ white-space: nowrap; font-weight: 400; font-size: 1rem; color: #808080; text-align: center; line-height: 1rem;}
+.this div h5{ color:#3e6eb5 !important;}

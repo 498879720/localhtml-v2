@@ -1,0 +1,46 @@
+
+body{ background: #fff;}
+
+
+/*列表容器*/
+.TopicCon{ height: auto; margin-bottom: 5rem;}
+
+.TopicCon ul{ background: #f5f5f5;}
+.TopicCon li{ margin-bottom: 0.6rem; background: #fff;}
+.TopicCon li h2{ font-size: 1.5rem; font-weight: 500; padding: 1.2rem 1rem; padding-bottom: 0.5rem; line-height: 1.9rem;}
+.TopicCon li h2 img{ width:2rem; margin-right: 0.9rem;  float: left;}
+.TopicCon li div{ padding: 1.2rem 1rem; padding-top: 0.6rem; font-size: 1.2rem; color: #8a8a8a;}
+.TopicCon li p{ font-size: 1.2rem; padding: 1.2rem 1rem; padding-top: 0; padding-bottom: 0.5rem; line-height: 2rem;}
+.TopicCon li div a{color: #8a8a8a; }
+.TopicCon li div span{ margin-right: 1.3rem;}
+
+
+
+
+
+/*话题详情*/
+.DetailsCon{ height: auto;}
+.DetailsCon h2{ font-size: 1.2rem; font-weight: 500; padding: 1.2rem 1rem; padding-bottom: 0.5rem; line-height: 1.9rem; color: #929292;}
+
+.DetailsCon h2 img{ width:2rem; margin-right: 0.9rem;  float: left;}
+.Details-text{ padding: 1.2rem 1rem; padding-top: 0.6rem;}
+.Details-text h3{ font-size: 1.6rem; margin-bottom: 0.8rem; line-height: 1.6rem; height: 1.6rem; font-weight: 500;}
+.Details-text p{ font-size: 1.2rem; line-height: 1.8rem; text-indent: 2.6rem; margin-bottom: 0.6rem;}
+.Details-text img{ width: 100%; margin-bottom: .8rem;}
+.Details-text h4{ font-size: 1.5rem; padding: 0.4rem 0rem; font-weight: 500; padding-bottom: 0.5rem; line-height: 1.9rem; }
+
+
+
+
+/*'底部按钮'*/
+.bottom_b{ padding: 0.8rem 0; display: block; width: 101%; max-width: 640px; min-width: 320px; background: #f7f7f7; border-top: solid 1px #dddddd; position: fixed; bottom: 0px;} 
+.bottom_b span{ display: inline-block; width: 32%; height: auto; border-left: solid 1px #e6e6e6;}
+.bottom_b span:first-child{ border: none;}
+.bottom_b span div{ width: 5rem; height:auto; margin: 0 auto;}
+.bottom_b span div .tubiao{ width: 2rem; height: 2rem; display: block; margin: 0 auto; margin-bottom: 0.1rem; position: relative; }
+.bottom_b span div .tubiao small{ padding:0 0.3rem; border:solid 1px #fff; border-radius:1rem; font-size: 0.5rem; display: block; color: #fff; font-weight: 500; background: #808080; min-width: 1rem; text-align: center; font-size: 1rem; position: absolute; left: 50%; top: -10%;}
+.this div .tubiao small{ background: #3e6eb5 !important;}
+.bottom_b span .tubiao:nth-child(1){ background:url(../images/m-con_06.png) 50% no-repeat; background-size:90%}
+.bottom_b span:nth-child(2) .tubiao{ background:url(../images/m-con_03.png) 50% no-repeat; background-size:90%}
+.bottom_b span:nth-child(3) .tubiao{ background:url(../images/m-con_09.png) 50% no-repeat; background-size:90%}
+.bottom_b h5{ text-align: center; font-weight: 100; color: #949494; font-size: 1rem;}

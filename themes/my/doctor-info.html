@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,
+    maximum-scale=1,user-scalable=no"/>
+    <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+
+    <title>患者信息</title>
+    <link rel="stylesheet" type="text/css" href="../../css/mui.min-alter.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/doctor-info.css">
+
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+    <script type="text/javascript" src="../../js/mui.min.js"></script>
+    <script type="text/javascript" src="../../js/mui.picker.js" charset="utf-8"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:history.go(-1)" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+		<h1>个人资料</h1>
+		<a href="doctor-personal-data.html" class="header_right">保存</a>
+	</header>
+<div class="patient-wrap">
+
+    <div class="patient-header  white-bg clear">
+
+        <a href="#sheet1" class="mui-navigate-right Head_portraitLi">
+            <div class=" header-icon mui-table-view-cell">
+                <p>上传头像</p>
+            </div>
+        </a>
+
+        <form class="header-contain">
+            <input type="text" id="name" placeholder="请输入您的真实姓名">
+
+            <div class="mui-table-view-cell" id="job">
+                <a class="mui-navigate-right" id="jobSet" href="#">
+                    请选择您的职位
+                </a>
+            </div>
+
+            <div class="mui-table-view-cell" id="department">
+                <a class="mui-navigate-right" id="departmentSet" href="#">
+                    选择您所在的科室
+                </a>
+            </div>
+
+
+        </form>
+        <div class="mui-table-view-cell "  id="hos">
+            <a class="mui-navigate-right" id="hosSet" href="#">
+                选择您所在的医院
+            </a>
+        </div>
+    </div>
+
+
+    <div class="patient-info white-bg">
+        <h3>个人简介</h3>
+        <textarea class="height-auto" maxlength="200" placeholder="请在此输入您的个人简介"></textarea>
+    </div>
+
+    <div class="patient-good white-bg">
+        <h3>我的擅长</h3>
+        <textarea class="height-auto" maxlength="200" placeholder="请在此输入您所擅长的技能"></textarea>
+    </div>
+
+</div>
+
+<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+    <!-- 可选择菜单 -->
+    <form>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a href="#">拍照或录像</a>
+            </li>
+            <li class="mui-table-view-cell upload_pic">
+
+                <label for="Choice" id="xcButt">在相册中选择</label>
+                <input accept="image/jpg, image/jpeg, image/png" onChange="form_pics.addImg(this);" type="file"
+                       id="Choice" value="在相册中选择" style="display: none;"/>
+                <img src="" id="uploadImg">
+
+                <script src="../../js/uploadImg.js" type="text/javascript"></script>
+            </li>
+        </ul>
+    </form>
+    <!-- 取消菜单 -->
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#sheet1"><b>取消</b></a>
+
+
+        </li>
+    </ul>
+</div>
+
+
+<script type="text/javascript">
+
+    var Img = document.getElementById("uploadImg");
+    Img.onload = function imgg() {
+        var Imgsrc = document.getElementById("uploadImg").attributes["src"].nodeValue;
+        //判断ImgSrc是否为空
+        if (Imgsrc != "") {
+
+            //判断是否已经包含确认按钮
+            if (document.getElementById("SumbitBt")) {
+                return false;
+            } else {
+                //创建确认按钮
+                var SumBtn = document.createElement("button");
+                Text = document.createTextNode("确认");
+                SumBtn.setAttribute("id", "SumbitBt");
+                SumBtn.setAttribute("type", "sumbit");
+                SumBtn.setAttribute("onclick", "Sub()");
+                insertAfter(SumBtn, Img);
+                SumBtn.appendChild(Text);
+            }
+
+
+            //创建定义插入后方的方法
+            function insertAfter(newElement, targetElement) { // newElement是要追加的元素 targetElement 是指定元素的位置
+                var parent = targetElement.parentNode; // 找到指定元素的父节点
+                if (parent.lastChild == targetElement) { // 判断指定元素的是否是节点中的最后一个位置 如果是的话就直接使用appendChild方法
+                    parent.appendChild(newElement, targetElement);
+                } else {
+                    parent.insertBefore(newElement, targetElement.nextSibling);
+                }
+                ;
+            };
+        }
+    }
+    //点击确认提交表单数据处理
+    function Sub() {
+        //提交图片数据
+        alert("点击提交上传")
+    }
+
+
+</script>
+
+<script type="text/javascript">
+
+
+    (function () {
+        var picker = new mui.PopPicker();
+        document.getElementById("job").addEventListener('tap', function (e) {
+
+            picker.setData([{value: '1', text: '医士'}, {value: '2', text: '住院医师   助教'}, {value: '3', text: '主治医师  讲师'},
+                {value: '4', text: '副主治医师  副教授'}, {value: '5', text: '主任医师  教授'}
+            ]);
+            picker.show(function (selectItems) {   //将选取的值处理
+                document.getElementById("jobSet").innerHTML = selectItems[0].text;
+            })
+        })
+    })();
+
+
+    (function () {
+        var picker = new mui.PopPicker();
+        document.getElementById("department").addEventListener('tap', function (e) {
+
+            picker.setData([{value: '1', text: '内科'}, {value: '2', text: '外科'}, {value: '3', text: '耳鼻喉科'},
+                {value: '4', text: '皮肤科'}, {value: '5', text: '骨科'}
+            ]);
+            picker.show(function (selectItems) {   //将选取的值处理
+                document.getElementById("departmentSet").innerHTML = selectItems[0].text;
+            })
+        })
+    })()
+
+
+    hos();
+    function hos() {
+        var picker = new mui.PopPicker();
+        document.getElementById("hos").addEventListener('tap', function (e) {
+
+            picker.setData([{value: '1', text: '西京医院'}, {value: '2', text: '西安唐都医院'}, {value: '3', text: '陕西省人民医院'},
+                {value: '4', text: '西安市中医医院'}, {value: '5', text: '陕西省中医医院'}, {value: '6', text: '西安市中医医院'},
+                {value: '7', text: '西安市儿童医院'}, {value: '8', text: '西安市第四医院'}, {value: '9', text: '西安交通大学第二附属医院'},
+
+            ]);
+            picker.show(function (selectItems) {   //将选取的值处理
+                document.getElementById("hosSet").innerHTML = selectItems[0].text;
+            })
+        })
+    }
+
+    function setHeight(element) {
+        $(element).css({'overflow-y': 'hidden', 'height': '10rem'}).height(element.scrollHeight);
+    }
+    $('.height-auto').each(function () {
+        setHeight(this);
+    }).on('input', function () {
+        setHeight(this);
+    });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+body{ background: #fff;}
+
+
+.concern-contain{ height: auto; overflow: hidden;}
+.concern-contain .list li{ padding: 1.4rem 1.6rem; height: auto; overflow: hidden; padding-bottom: 0;}
+.concern-contain .list li img{ width: 15%;  display: inline-block;}
+.text_con{  width:85%; float: right; display: inline-block; margin-right: -1.6rem;  height: auto; border-bottom: solid 1px #e0e0e0;  padding-bottom: 1.6rem; }
+.text_con h3{ font-size: 1.4rem; font-weight: 500; height: 1.6rem; line-height: 1.6rem; margin-bottom: 0.8rem; margin-top: 0.4rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.text_con p{ font-size: 1rem;  height: 1rem; line-height: 1rem; color: #97999e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.text_con p span:first-child{ padding: 0 0.5rem; color: #83c3c5;}
+.text_con p span:nth-child(2){ margin-left: 3rem;}
+
+
+.topic li, .Success li{ border-bottom: solid 1px #e0e0e0;}
+.Con-man li{ position: relative;}
+.Con-man li .Cancel_att{ position: absolute; right: 1rem; top: 2.5rem; height: 1.3rem; font-size: 1.1rem; line-height: 1.3rem; border: solid 1px #e3e3e3; color: #868c8c; border-radius: 0.2rem;box-sizing: content-box; padding:0.4rem 0.3rem;}
+.Con-man li .Cancel_att:active{ background: #868c8c; color: #fff;}
+
+.topic .text_con, .Success .text_con{ border-bottom: none;}
+
+.Success .text_con p{ font-size: 1.2rem; height: 1.3rem; line-height: 1.3rem; color: #87898c;}
+.topic .text_con p{ font-size: 1.2rem; height: 1.3rem; line-height: 1.3rem; color: #87898c;}
+.Con-man .text_con p{ font-size: 1.2rem; height: 1.3em; line-height: 1.3rem; color: #c2c2c2;}
+
+.Success p, .Con-man p{ color: #b6b7ba;}
+.Success p span, .Con-man p span{ margin-right: 0rem;}
+.Con-man p span:first-child{ color: #c2c2c2;}
+.Success p span:nth-child(2), .Con-man p span:nth-child(2){ margin-left: 0;}
+
+
+
+
+
+.concern li{ border-bottom: solid 1px #e0e0e0;}
+.concern .text_con{width: 100%;border-bottom: none;margin-right: 0;}
+.concern .text_con p{font-size:1rem; height:1rem; line-height:1rem }
+.concern .text_con p span:first-child{ padding: 0 0.3rem; color: #808184; margin-right: 2rem;}
+.concern .text_con p span:nth-child(2){ margin-left:0rem;}

@@ -1,0 +1,111 @@
+body{
+    background: #f3f3f3;
+}
+.home-page {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    margin-top: -4.5rem;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#suggest-header {
+    width: 100%;
+    position: relative;
+    background: #00ced6;
+    -webkit-box-shadow: 0.1rem 0.2rem 0.3rem #cccccc;
+    -moz-box-shadow: 0.1rem 0.2rem 0.3rem #cccccc;
+    box-shadow: 0.1rem 0.2rem 0.3rem #cccccc;
+}
+#suggest-header > a {
+    display: inline-block;
+    margin: 1.3rem 0 0 0.8rem;
+    float: left;
+}
+#suggest-header > a img {
+    width: 1.4rem;
+    height: 0.9rem;
+}
+#suggest-header input[type='text'] {
+    width: 74%;
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 1px 1px 1px rgba(6, 0, 1, 0.2) inset;
+    box-shadow: 1px 1px 1px rgba(6, 0, 1, 0.2) inset;
+    padding: 0.6rem 0.5rem 0.6rem 2.7rem;
+    margin: 0.8rem 0 0.8rem 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: #efefef url(../images/search.png) no-repeat 0.8rem 0.7rem;
+    background-size: 1.2rem 1.2rem;
+}
+#suggest-header button {
+    display: inline-block;
+    float: right;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 1.2rem 0.7rem 0 0;
+    background: none;
+    border: none;
+    outline: none;
+    width: 11%;
+    text-align: center;
+}
+#suggest-header button a{
+    color: #FFFFFF;
+    font-size:1.3rem;
+}
+.container > p{
+    font-size:1.4rem;
+    padding:1rem;
+    border-bottom:solid 1px #dedddd;
+    margin-top:0.5rem;
+    background: #FFFFFF;
+}
+.container > p i{
+    display: inline-block;
+    width: 14%;
+    margin: 0 7% 0 4%;
+}
+.container > p i img{
+    width:100%;
+    height:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+.container > ul{
+    background: #FFFFFF;
+    margin-top:0.5rem;
+}
+.container li{
+    padding:1.5rem;
+    border-bottom:solid 1px #dedddd;
+}
+.container li h4{
+    font-size:1.5rem;
+}
+.container li p{
+    margin:1.3rem 0;
+    font-size:1.2rem;
+    color: #4f4f4f;
+    line-height: 1.8rem;
+}
+.container li span{
+    font-size:1rem;
+    color: #b7b7b7;
+}
+.container li span:first-of-type{
+    padding-right:0.9rem;
+    border-right:1px solid #b7b7b7;
+}
+.container li span:last-of-type{
+    margin-left:0.9rem;
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+
+		<title>我的患者</title>
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/my-patient.css">
+		<script src="../../js/zepto.min.js" type="text/javascript"></script>
+		<script src="../../js/zepto.sqq.js" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<a href="../../my.html" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>我的患者</h1>
+		</header>
+		<div class="main">
+			<ul class="patient-nav clear">
+				<a href="my-unpatient.html">
+					<li>未完善</li>
+				</a>
+				<a href="my-patient.html">
+					<li class="active">已完善</li>
+				</a>
+			</ul>
+			<a href="patient-case.html">
+			<div class="patient-main clear">
+				<img src="../../images/my-photo-i.png">
+				<dl>
+					<dt>丁芷兰</dt>
+					<dd>女 20岁</dd>
+					<dd class="patient-icon-active"><i></i></dd>
+				</dl>
+			</div>
+			</a>
+			<div class="patient-main clear">
+				<img src="../../images/my-photo-i.png">
+				<dl>
+					<dt>丁芷兰</dt>
+					<dd>女 20岁</dd>
+					<dd class="patient-icon-active"><i></i></dd>
+				</dl>
+			</div>
+
+			<div class="patient-main clear">
+				<img src="../../images/my-photo-i.png">
+				<dl>
+					<dt>丁芷兰</dt>
+					<dd>女 20岁</dd>
+					<dd class="patient-icon-active"><i></i></dd>
+				</dl>
+			</div>
+
+			<div class="patient-main clear">
+				<img src="../../images/my-photo-i.png">
+				<dl>
+					<dt>丁芷兰</dt>
+					<dd>女 20岁</dd>
+					<dd class="patient-icon-active"><i></i></dd>
+				</dl>
+			</div>
+
+		</div>
+
+		
+		<script>
+			/*  document.ready(function () {
+			        $(".patient-icon-active img").on("touchend",function () {
+			                alert("222")
+			        })
+			    })*/
+
+			$(document).ready(function() {
+				$(".patient-icon-active i").on('touchend', function() {
+					$(this).toggleClass("patient-icon-active")
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

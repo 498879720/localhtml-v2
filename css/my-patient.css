@@ -1,0 +1,70 @@
+.white-bg {
+  background: #ffffff !important;
+}
+.main .patient-nav {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #d3d3d3;
+  -webkit-box-shadow: 3px 3px 6px #e0dfdf;
+  -moz-box-shadow: 3px 3px 6px #e0dfdf;
+  box-shadow: 3px 3px 6px #e0dfdf;
+}
+.main .patient-nav a {
+  width: 50%;
+  border-right: 1px solid #e0e0e0;
+  float: left;
+  text-align: center;
+  color: #969698;
+  font-size: 1.3rem;
+}
+.main .patient-nav a:last-child {
+  border-right: none;
+}
+.main .patient-nav .active {
+  color: #262626;
+}
+.main .patient-main {
+  padding:0 0.5rem;
+}
+.main .patient-main > img {
+  width: 12.5%;
+  margin: 1.5rem 3% 1.5rem 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+.main .patient-main dl {
+  position: relative;
+  margin: 1.5rem 0 0 0;
+  width: 83%;
+  float: left;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1.5rem;
+}
+.main .patient-main dl dt {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  margin-bottom: 0.6rem;
+}
+.main .patient-main dl dd {
+  font-size: 1.1rem;
+  color: #8c8c8c;
+}
+.main .patient-main dl dd:last-child {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.8rem;
+}
+.main .patient-main dl dd:last-child i {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../images/patient-icon.png");
+  background-size: 100%;
+}
+.main .patient-main dl dd:last-child .patient-icon-active {
+  background: url("../images/patient-active.png") !important;
+  background-size: 100% !important;
+}

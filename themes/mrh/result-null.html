@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>无搜索结果模板</title>
+		<link rel="stylesheet" href="../../css/reset.css" media="screen">
+		<link rel="stylesheet" href="../../css/common.css" media="screen">
+		<link rel="stylesheet" href="../../css/result-null.css" media="screen">
+		<script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+	</head>
+
+	<body>
+		<div class="home-page">
+			<div id="suggest-header" class="clear">
+				<a href="javascript:history.go(-1)"> <img src="../../images/arrow.png"></a>
+				<input type="text" autofocus value="头晕">
+				<button><a href="">搜索</a></button>
+			</div>
+
+			<div class="case-temp">
+				<div class="file" id="box">
+					<div class="file-tu">
+						<div class="file-tu-box"><img src="../../images/null-bg.png" /></div>
+					</div>
+					<h4>没有找到<span id="txt"> </span>相关病历</h4>
+					<p>您可以创建一个新病历</p>
+					<a href=""><button class="create-template">新建病历</button></a>
+				</div>
+			</div>
+
+		</div>
+
+		<script>
+			var s = document.documentElement.clientHeight - $('#suggest-header').height();
+			$('.case-temp').height(s);
+			var t = '“' + $('#suggest-header input').val() + '”';
+			$('#txt').text(t);
+		</script>
+	</body>
+
+</html>

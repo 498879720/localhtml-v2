@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+    <title>@（输入）</title>
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/common.css" media="screen">
+    <link rel="stylesheet" href="css/at-page.css" media="screen">
+    <script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+</head>
+<body>
+<div class="home-page">
+    <div class="container">
+        <div id="suggest-header" class="clear">
+            <a href="javascript:history.go(-1)"> <img src="images/arrow.png"></a>
+            <input type="text" autofocus placeholder="想要@到谁?">
+            <button><a href="">查找</a></button>
+        </div>
+
+        <div class="main-wrap">
+
+            <div class="at-list clear">
+                <img src="images/at_03.png">
+                <dl class="clear">
+                    <dt>花轮同学</dt>
+                    <dd>于无声处听惊雷</dd>
+                    <dd>
+                        <button class="at-btn">关注</button>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="at-list clear">
+                <img src="images/at_07.png">
+                <dl class="clear">
+                    <dt>花轮同学</dt>
+                    <dd>于无声处听惊雷</dd>
+                    <dd>
+                        <button class="at-btn">关注</button>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="at-list clear">
+                <img src="images/at_09.png">
+                <dl class="clear">
+                    <dt>花轮同学</dt>
+                    <dd>于无声处听惊雷</dd>
+                    <dd>
+                        <button class="at-btn">关注</button>
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(".at-btn").on("touchend", function () {
+        if ($(this).hasClass("active-btn")) {
+            $(this).removeClass("active-btn").text("关注")
+        } else {
+            $(this).addClass("active-btn").text("已关注");
+        }
+
+    })
+</script>
+</body>
+
+</html>

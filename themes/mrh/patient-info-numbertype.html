@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		        <!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<title>编号类型</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../css/patient-info.css">
+
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.sqq.js"></script>
+
+		<style>
+			body {
+				background: #f6f6f6;
+			}
+			
+			textarea {
+				width: 90%;
+				margin: 5% 1.6rem;
+				height: 10rem;
+				padding: 1rem;
+				font-size: 1.2rem;
+			}
+			
+			ul {
+				margin-top: 0.7rem;
+			}
+			
+			li {
+				font-size: 1.2rem;
+				padding: 1.4rem;
+				background: #ffffff;
+				border-bottom: 1px solid #e9e9e9;
+			}
+			
+			.active {
+				color: #60c634;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="javascript:history.go(-1)" class="his_left his_t_1"><img src="../../images/jiantou_left.png"/></a>
+			<h3>编号类型</h3>
+		</header>
+		
+		<div class="wrap">
+			<ul>
+				<li>门诊号</li>
+				<li>住院号</li>
+				<li>病例号</li>
+				<li>其他编号</li>
+			</ul>
+
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$("ul li").on("touchend", function() {
+					$("ul li").removeClass("active");
+					$(this).addClass("active")
+
+					if($("ul li").hasClass("active")) {
+						localStorage.setItem("numberType", JSON.stringify($(this).text()));
+						location.href = "javascript:history.go(-1)"
+					}
+				});
+
+			})
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,149 @@
+.white-bg {
+  background: #ffffff !important;
+}
+body {
+  background: #f6f6f6;
+}
+.course-wrap {
+  padding-top: 0.6rem;
+}
+.course-wrap .list-box {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 3px 3px 1px #e0dfdf;
+  -moz-box-shadow: 3px 3px 1px #e0dfdf;
+  box-shadow: 3px 3px 1px #e0dfdf;
+  margin-bottom: 0.6rem;
+}
+.course-wrap .list-box:first-child div:first-child {
+  float: left;
+}
+.course-wrap .list-box:first-child div:first-child span {
+  position: relative;
+  top: -0.65rem;
+  color: #4f4f4f;
+  font-size: 1.2rem;
+}
+.course-wrap .list-box:first-child div:first-child i {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/case-icon1.png) 0 0 no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.course-wrap .list-box:first-child div:last-child {
+  float: right;
+  position: relative;
+  top: 0.5rem;
+}
+.course-wrap .list-box:first-child div:last-child span {
+  color: #bbbbbb;
+  font-size: 1.1rem;
+  position: relative;
+  top: -0.2rem;
+}
+.course-wrap .list-box:first-child div:last-child i {
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../images/right-arrow.png) no-repeat;
+  background-size: 66%;
+  display: inline-block;
+  margin-left: 1rem;
+}
+.course-wrap .list-box:nth-child(3) div:first-child {
+  float: left;
+}
+.course-wrap .list-box:nth-child(3) div:first-child span {
+  position: relative;
+  top: -0.65rem;
+  color: #4f4f4f;
+  font-size: 1.2rem;
+}
+.course-wrap .list-box:nth-child(3) div:first-child i {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/course-icon_09.png) 0 0 no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.course-wrap .list-box:nth-child(3) div:last-child {
+  float: right;
+  position: relative;
+  top: 0.5rem;
+}
+.course-wrap .list-box:nth-child(3) div:last-child span {
+  color: #bbbbbb;
+  font-size: 1.1rem;
+  position: relative;
+  top: 0;
+}
+.course-wrap .list-box:nth-child(3) div:last-child i {
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../images/right-arrow.png) no-repeat;
+  background-size: 66%;
+  display: inline-block;
+  margin-left: 1rem;
+  position: relative;
+  top: 0.3rem;
+}
+.course-wrap .list-box:nth-child(4) div:first-child {
+  float: left;
+}
+.course-wrap .list-box:nth-child(4) div:first-child span {
+  position: relative;
+  top: -0.65rem;
+  color: #4f4f4f;
+  font-size: 1.2rem;
+}
+.course-wrap .list-box:nth-child(4) div:first-child i {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/course-icon_12.png) 0 0 no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.course-wrap .list-box:nth-child(4) div:last-child {
+  float: right;
+  position: relative;
+  top: 0.5rem;
+}
+.course-wrap .list-box:nth-child(4) div:last-child span {
+  color: #bbbbbb;
+  font-size: 1.1rem;
+  position: relative;
+  top: -0.2rem;
+}
+.course-wrap .list-box:nth-child(4) div:last-child i {
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../images/right-arrow.png) no-repeat;
+  background-size: 66%;
+  display: inline-block;
+  margin-left: 1rem;
+  position: relative;
+  top: 0.3rem;
+}
+.course-wrap .add-img-wrap {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 3px 3px 1px #e0dfdf;
+  -moz-box-shadow: 3px 3px 1px #e0dfdf;
+  box-shadow: 3px 3px 1px #e0dfdf;
+  margin-bottom: 0.6rem;
+}
+.course-wrap .add-img-wrap h3 {
+  color: #bbbbbb;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+.course-wrap .add-img-wrap img {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.course-wrap .add-img-wrap img:first-child {
+  border: 1px dashed #a7a7a7;
+}

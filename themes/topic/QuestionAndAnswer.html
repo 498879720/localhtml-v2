@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />		
+		<title>话题列表</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css" >
+        <link rel="stylesheet" type="text/css" href="../../css/common.css" >       
+        <link rel="stylesheet" type="text/css" href="../../css/TopicCircle.css" >
+        <script type="text/javascript" src="../../js/jquery.min.js" ></script>
+        <script type="text/javascript" src="../../js/zepto.min.js" ></script>
+        <script type="text/javascript" src="../../js/zepto.sqq.js" ></script>
+        <script type="text/javascript" src="../../js/mui.min.js"></script>
+	</head>
+	<body class="QAndA">
+
+
+<!--占位header-->
+<header>
+	<a href="javascript:history.go(-1)" class="his_left his_t_1"><img src="../../images/arrow.png"></a>
+	<a href="write-answer.html" class="header_right"><i><img src="../../images/co_btn.png"></i>写回答</a>	
+</header>
+
+<div class="QuestionCon">
+	<h2>两个月内如何快速减脂？</h2>
+	<p>我今年17，177cm，85kg，卧推60kg，深蹲140kg，硬拉170kg，以前学过摔跤和拳击，算是有点运动基础，心肺能力一般...<span class="Zk">展开详情</span></p>
+	<div class="Fabulous Fab2">
+		 <span class="BrowseVolume">782</span>
+		 
+		 <span class="FabulousTex">45</span>
+		 <span class="follow">关注</span>
+	</div>
+</div>
+
+<script>
+	$(function(){
+	 var num = 0;
+	function Zhank(lei,This){		
+		if(num==0){
+			num++;
+			$(lei).css({"max-height":'none'});
+			$(This).text("隐藏详情");
+		} else {
+			num--;
+			$(lei).css({"max-height":'7.5rem'});
+			$(This).text("展开详情");
+		}
+		
+		
+	};
+	
+	$(".Zk").click(function (){		
+		Zhank(".QuestionCon p",this);
+	})
+	
+	var n=0;
+	$(".FabulousTex").click(function(){
+		var texNum=parseInt($(this).text());
+		if(n==0){
+		$(this).addClass("FabulousClick");
+		   $(this).text(texNum+1)
+			n=1
+		} else {
+		$(this).removeClass("FabulousClick");
+			n=0;
+			 $(this).text(texNum-1)
+		}
+		
+	})
+	
+	})
+	
+
+</script>
+
+<div class="CommentList">
+	<ul>
+		<li>
+			<h3><img src="../../images/QandA_11.png">小野妹子 <span><i>6</i>小时前</span></h3>
+			<a href="answer-details.html"><p>说在最前面的话：每个人都是不同的个体，基因不同，小肠直径不同，吸收能力不同。别人减脂的经验方法不一定适合你。举个例子：同样的两个人吃同样的东西，一个人吸收百分之90，一个人吸收百分之50，然不...</p></a>
+		    <div class="commentCon"><span><i>6.8k</i>赞</span><span><i>498</i>评论</span></div>
+		</li>
+		
+		<li>
+			<h3><img src="../../images/QandA_14.png">酒吞童子 <span><i>6</i>小时前</span></h3>
+			<p>说在最前面的话：每个人都是不同的个体，基因不同，小肠直径不同，吸收能力不同。别人减脂的经验方法不一定适合你。举个例子：同样的两个人吃同样的东西，一个人吸收百分之90，一个人吸收百分之50，然不...</p>
+		    <div class="commentCon"><span><i>6.8k</i>赞</span><span><i>498</i>评论</span></div>
+		</li>
+	</ul>
+</div>
+
+
+
+</body>
+
+</html>
+ 

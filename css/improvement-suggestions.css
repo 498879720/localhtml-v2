@@ -1,0 +1,41 @@
+.main{
+    width:93%;
+    margin:0 auto;
+    height:auto;
+    overflow: hidden;
+}
+.main form{
+    /*height:auto;*/
+    /*overflow: hidden;*/
+    border-bottom:solid 1px #e0e0e0;
+}
+.main textarea{
+    width:100%;
+    outline:none;
+    color: #ada8a8;
+    height:auto;
+    overflow: hidden;
+    font-size:1.3rem;
+    margin: 1rem 0 0.5rem 0;
+}
+form > .save-btn{
+    position: fixed;
+    bottom:2rem;
+    left:50%;
+    font-size:1.6rem;
+    text-align: center;
+    background: #00ced6;
+    color: #ffffff;
+    width:50%;
+    padding:0.6rem 0;
+    -webkit-border-radius:0.2rem;
+    -moz-border-radius:0.2rem;
+    border-radius:0.2rem;
+    border:none;
+    outline:none;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}

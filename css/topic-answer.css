@@ -1,0 +1,164 @@
+.white-bg {
+  background: #ffffff !important;
+}
+textarea {
+  resize: none;
+}
+.answer-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #00ced6;
+  line-height: 4.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  z-index: 9;
+}
+.answer-header .answer-header-title {
+  position: relative;
+}
+.answer-header .answer-header-title a {
+  display: inline-block;
+  position: relative;
+  top: 0.2rem;
+}
+.answer-header .answer-header-title a:first-child {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("../images/close.png") no-repeat;
+  background-size: 100%;
+}
+.answer-header .answer-header-title a:last-child {
+  width: 2.3rem;
+  height: 2.3rem;
+  background: url("../images/answer-post_03.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 1.3rem;
+}
+.answer-input {
+  margin-top: -0.2rem;
+  background: #00ced6;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: 3px 3px 6px #e0dfdf;
+  -moz-box-shadow: 3px 3px 6px #e0dfdf;
+  box-shadow: 3px 3px 6px #e0dfdf;
+}
+.answer-input div {
+  width: 90%;
+  border: 1px solid #ffffff;
+  margin: 0.3rem 5% 2rem;
+}
+.answer-input div textarea {
+  width: 102%;
+  margin: -0.5rem 0 0.3rem -0.5rem;
+  padding: 1.5rem 1.5rem 0;
+  font-size: 1.5rem;
+  background: #00ced6;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  position: relative;
+  top: -0.5rem;
+  resize: none;
+}
+.answer-input div textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.answer-main {
+  padding-top: 2rem;
+}
+.answer-main .textarea-wrap {
+  width: 90%;
+  margin-left: 5%;
+}
+.answer-main .textarea-wrap textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background: #ffffff;
+  outline: none;
+  color: #cfcfcf;
+  position: relative;
+  top: -0.5rem;
+  resize: none;
+  border: 1px solid #dbdbdb;
+}
+.answer-main .textarea-wrap textarea::-webkit-input-placeholder {
+  color: #cfcfcf;
+}
+.answer-main .upImg {
+  height: auto;
+  background: #fff;
+  padding: 2rem 2rem 1.6rem;
+  margin-top: 1rem;
+}
+.answer-main .upImg h3 {
+  color: #bbbbbb;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+.answer-main .UpimgCon {
+  height: auto;
+  overflow: hidden;
+}
+.answer-main #upImg {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  background: url(../images/1_07.png) no-repeat;
+  background-size: 100%;
+  float: left;
+  margin-right: 0.3rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.answer-main #fileImage {
+  display: none;
+  float: left;
+}
+.answer-main .upload_append_list {
+  display: inline-block;
+  margin-right: 0.3rem;
+  margin-left: 0.5rem;
+  border: solid 1px #f6f6f6;
+  margin-bottom: 0.7rem;
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  overflow: hidden;
+  text-align: center;
+}
+.answer-main .upload_append_list a {
+  font-size: 0.8rem;
+  display: block;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: .1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 1.4rem;
+}
+.answer-main .upload_preview strong {
+  display: inline-block;
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 100;
+  max-width: 6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.answer-main .upload_preview img {
+  width: auto;
+  max-width: 6rem;
+  height: auto;
+  max-height: 6rem;
+}

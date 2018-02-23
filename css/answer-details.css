@@ -1,0 +1,178 @@
+.answer_fix{
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+	position: fixed;
+	width: 100%;
+}
+.answer{
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    height: auto;
+    overflow: hidden;
+    margin-top: -4.4rem;
+}
+.answer-head{
+    background: #00ced6;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    line-height: 4.5rem;
+}
+.answer-head i{
+    display: inline-block;
+    width:1.35rem;
+    height:1.35rem;
+    background: url("../images/close.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    margin:1.7rem 2rem 1rem 1.6rem;
+    float: left;
+}
+.answer-head span{
+    display: inline-block;
+    width:0.35rem;
+    height:1.5rem;
+    background: url("../images/more.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    margin:1.6rem 1.6rem 0 0;
+    float: right;
+}
+.answer-title{
+    background: #00ced6;
+    position: relative;
+    padding: 1rem 0 5rem 3rem;
+    -webkit-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    -moz-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+}
+.answer-title span{
+    display: inline-block;
+    color: #FFFFFF;
+    font-size:1.8rem;
+}
+.title-content{
+    width: 91%;
+    padding: 1.6rem 0;
+    background: #FFFFFF;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    z-index: 10;
+    -webkit-border-radius:0.3rem;
+    -moz-border-radius:0.3rem;
+    border-radius:0.3rem;
+    -webkit-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    -moz-box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+    box-shadow: 0rem 0.1rem 0.2rem #cccccc;
+}
+.title-content i{
+    width:13%;
+    display: inline-block;
+    float: left;
+    margin:0 1rem 0 1.7rem;
+}
+.title-content i img{
+    width:100%;
+    height:100%;
+}
+.title-content > div{
+    float: left;
+}
+.title-content > div h4{
+    color: #787878;
+    font-size:1.2rem;
+    margin-top:0.2rem;
+}
+.title-content > div p{
+    font-size:1rem;
+    color: #c3c3c3;
+    margin-top:0.6rem;
+}
+.title-content > span{
+    background: #99d87a;
+    color: #FFFFFF;
+    padding: 0.3rem 1.2rem 0.4rem 1.2rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    float: right;
+    margin-right: 1.7rem;
+    font-size: 1.2rem;
+    margin-top: 0.9rem;
+}
+.answer-content{
+    padding:5rem 1.8rem 4.5rem 1.8rem;
+    margin-top: 11rem;    
+}
+.answer-content p{
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    margin-top: 0.3rem;
+    line-height: 2.5rem;
+}
+.foot{
+    height:4.9rem;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    z-index: 100;
+    border-top:1px solid #d3d3d3;
+    background: #FFFFFF;
+}
+.foot a{
+    display: inline-block;
+    width:33.3%;
+    border-right:1px solid #ececec;
+    float: left;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.foot a:last-of-type{
+    border:none;
+}
+.foot a span{
+    display:inline-block;
+    position: relative;
+}
+.foot a span i{
+    display: inline-block;
+}
+.foot a:first-of-type span i{
+    width:1.85rem;
+    height:1.75rem;
+    background: url("../images/dianzan.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}
+.foot a:nth-of-type(2) span i{
+    width:1.8rem;
+    height:1.7rem;
+    background: url("../images/pinglun.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}
+.foot a:last-of-type span i{
+    width:1.55rem;
+    height:1.95rem;
+    background: url("../images/fenxiang.png")0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}
+.foot a span sup{
+    position: absolute;
+    background: #ff9587;
+    color: #FFFFFF;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #FFFFFF;
+    font-size: 0.7rem;
+    padding: 0 0.3rem;
+    left: 1.5rem;
+    top: -0.2rem;
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+
+		<title>改善意见</title>
+		<link rel="stylesheet" href="../../css/reset.css" media="screen">
+		<link rel="stylesheet" href="../../css/common.css" media="screen">
+		<link rel="stylesheet" href="../../css/improvement-suggestions.css" media="screen">
+		<script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="patient-details.html" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>改善意见</h1>
+		</header>
+		<div class="main">
+			<form>
+				<textarea class="height-auto" placeholder="请在此输入您宝贵的意见或建议！"></textarea>
+				<div class="save-btn">保存</div>
+			</form>
+
+		</div>
+
+		
+		<script>
+			function setHeight(element) {
+				$(element).css({
+					'overflow-y': 'hidden',
+					'height': '2rem'
+				}).height(element.scrollHeight);
+			}
+
+			$('.height-auto').each(function() {
+				setHeight(this);
+			}).on('input', function() {
+				setHeight(this);
+			});
+		</script>
+		<script>
+			$(function() {
+				$('.save-btn').click(function() {
+					if($('textarea').val() == "") {
+						alert("改善意见不能为空！")
+					} else {
+						localStorage.setItem("name", $('textarea').val());
+						window.location.replace('patient-details.html');
+					}
+				});
+				var ra = "";
+				ra = localStorage.getItem('rename');
+				if(ra) {
+					$('textarea').val(ra);
+				}
+			})
+		</script>
+	</body>
+
+</html>

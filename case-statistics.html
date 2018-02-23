@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+    <title>病历统计</title>
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/common.css" media="screen">
+    <link rel="stylesheet" href="css/case-statistics.css" media="screen">
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/zepto.sqq.js"></script>
+
+    <script src="js/echarts.min.js" ></script>
+</head>
+<body>
+<div class="home-page">
+    <div class="case-top clear">
+        <a href="case-manage.html" >病历管理</a>
+        <a href="case-statistics.html" class="active">病历统计</a>
+        <a href="labe-list.html">病历分类</a>
+    </div>
+
+    <div class="warp-content clear">
+        <h3>按性别分类统计</h3>
+        <!--<p>(% of total)</p>-->
+        <div class="warp-chart" id="main1"></div>
+    </div>
+
+    <div class="warp-content clear">
+        <h3>按诊断结果统计</h3>
+        <!--<p>(% of total)</p>-->
+        <div class="warp-chart chart2" id="main2"></div>
+    <div>
+	</div>
+</div>
+
+		
+<script>
+    var myChart=echarts.init(document.getElementById("main1"));
+    var myChart2=echarts.init(document.getElementById("main2"));
+    var option = {
+     /*   title : {
+         text: '按性别分类统计',
+         x: 'center'
+         },*/
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        grid:{
+            top:0
+        },
+        legend: {
+            orient: 'horizontal',
+            x: 'center',
+            y:'bottom',
+            data:['女','男']
+        },
+        series: [
+            {
+                name:'性别',
+                type:'pie',
+                radius: ['40%', '80%'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        show: true,
+                        textStyle: {
+                            fontSize: '30',
+                            fontWeight: 'bold'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data:[
+                    {value:335, name:'女',itemStyle: {normal: {color: '#fd8585'}}},
+                    {value:310, name:'男',itemStyle: {normal: {color: '#95ddfb'}}}
+                ]
+            }
+        ]
+    };
+    var option2 = {
+        /*title : {
+            text: '按诊断结果分类统计',
+            x: 'center',
+            y:'top'
+        },*/
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        legend: {
+            orient: 'horizontal',
+            x: 'center',
+            y:'bottom',
+            data:['骨质增生','关节炎','滑膜炎','半月板损伤','骨质疏松','强直性脊柱炎']
+        },
+        grid:{
+            top:'10%',
+            left:'5%'
+        },
+        series: [
+            {
+                name:'诊断结果',
+                type:'pie',
+                radius: ['40%', '80%'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        show: false,
+                        textStyle: {
+                            fontSize: '30',
+                            fontWeight: 'bold'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data:[
+                    {value:30, name:'骨质增生',itemStyle: {normal: {color: '#ff9abe'}}},
+                    {value:60, name:'关节炎',itemStyle: {normal: {color: '#fd8585'}}},
+                    {value:280, name:'滑膜炎',itemStyle: {normal: {color: '#fdd67a'}}},
+                    {value:390, name:'半月板损伤',itemStyle: {normal: {color: '#95ddfb'}}},
+                    {value:180, name:'骨质疏松',itemStyle: {normal: {color: '#97eebc'}}},
+                    {value:60, name:'强直性脊柱炎',itemStyle: {normal: {color: '#edc1ae'}}}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    myChart2.setOption(option2);
+
+    $('#main2 > div').css('margin-top','-4rem');
+</script>
+<footer>
+			<a href="index.html">
+				<span></span>
+			</a>
+			<a href="case-manage.html">
+				<span class="ative"></span>
+			</a>
+			<a href="case-file.html">
+				<span></span>
+			</a>
+
+			<a href="">
+				<span></span>
+			</a>
+			<a href="my.html">
+				<span></span>
+			</a>
+		</footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

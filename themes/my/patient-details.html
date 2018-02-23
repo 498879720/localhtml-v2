@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- UC强制全屏 --> 
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+
+		<title>病例详情</title>
+
+		<link rel="stylesheet" href="../../css/reset.css" media="screen">
+		<link rel="stylesheet" href="../../css/common.css" media="screen">
+		<link rel="stylesheet" href="../../css/patient-details.css" media="screen">
+		<script src="../../js/zepto.min.js"></script>
+		<script src="../../js/zepto.sqq.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="my-patient.html" class="his_to"> <i><img src="../../images/header-icon.png" alt=""></i></a>
+			<h1>病例详情</h1>
+		</header>
+		<div class="main">
+			<div class="main-detail">
+				<div class="detail-wz">
+					<h4>心血管疾病</h4>
+					<p><span>丁志兰</span><span>女</span><span>20</span>主治医师：姜柏芝</p>
+				</div>
+				<div class="detail-yj detail-yj-act">+改善意见</div>
+				<!--<div class="detail-yj-act">+改善意见</div>-->
+			</div>
+
+			<div class="main-list">
+				<ul>
+					<li>
+						<div class="main-list-top">
+							<i></i>
+							<h3>病症描述</h3>
+						</div>
+						<div class="list-ms">
+							<p>抑郁症是躁狂抑郁症的一种发作形式，以情感低落、思维迟缓、以及言语动作减少，迟缓为典型症状。抑郁症严重困扰患者的生活和工作， 给家庭和社会带来沉重的负担，约15%的抑郁症患者死于自杀。
+							</p>
+						</div>
+
+					</li>
+
+					<li>
+						<div class="main-list-top">
+							<i></i>
+							<h3>检查断言</h3>
+						</div>
+						<div class="list-ms">
+							<p>给家庭和社会带来沉重的负担，约15%的抑郁症患者死于自杀。</p>
+							<p>世界卫生组织、世界银行和哈佛大学的一项联合研究</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="main-list-top">
+							<i></i>
+							<h3>开出药方</h3>
+						</div>
+						<div class="list-ms list-drug">
+							<p>维C银翘片 一盒</p>
+							<p>天然维生素E软胶囊 一盒</p>
+							<p>阿魏酸钠片 一袋 </p>
+							<p> 阿魏酸钠葡萄糖 一瓶</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="main-list-top">
+							<i></i>
+							<h3>附件</h3>
+						</div>
+						<div class="list-ms">
+							<p>按照中国精神障碍分类与诊断标准第三版，社会功能损害的程度抑郁症可分为轻性抑郁症或者重症抑郁症； 根据有无幻觉、妄想，
+							</p>
+						</div>
+					</li>
+
+					<!--<li>
+				<div class="main-list-top main-list-act">
+					<i></i><h3>改善意见</h3>
+					<span>编辑</span>
+				</div>
+				<div class="list-ms">
+					<p>在做设计师的过程中我逐渐意识到，好的设计不仅要关注我们平时每天的生活，
+						也应该考虑去解决社会中一些更大的问题，关注社会的需求。 </p>
+				</div>
+			</li>-->
+				</ul>
+			</div>
+
+		</div>
+
+		
+		<script>
+			$(function() {
+				$('.detail-yj-act').click(function() {
+					if(!a) {
+						window.location.replace('improvement-suggestions.html');
+					}
+				});
+				var a = "";
+				a = localStorage.getItem('name');
+				console.log(a);
+				if(a) {
+					$('.detail-yj').removeClass('detail-yj-act');
+					var s = "";
+					s = '<li><div class="main-list-top main-list-act"><i></i><h3>改善意见</h3><span id="edit">编辑</span></div><div class="list-ms"><p>' + a + '</p></div></li>';
+					$('.main-list ul').append(s);
+					$('.detail-yj-act').click(function() {
+						return false;
+					});
+				}
+
+				$('#edit').click(function() {
+					localStorage.setItem('rename', a);
+					window.location.replace('improvement-suggestions.html');
+				})
+			});
+		</script>
+	</body>
+
+</html>
